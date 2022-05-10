@@ -1,0 +1,262 @@
+
+
+/***********CORES**********/
+$corMenu: #2d2d2d;
+$lilazPadrao: #f6e100;
+
+header{
+    .caixaInfo{
+        max-width: 700px;
+        article{
+            :nth-child(2){
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 17px;
+                color: white;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+#containerBody{
+
+    /*LINHA 1
+    **************************************/
+    .PT_row1{
+        padding: 50px 0;
+        .subRow{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                transition: 0.7 ease-in-out;
+                .box1,.box2{
+                    height: 400px;
+                }
+                .box1{
+                    padding: 50px;
+                    background: rgb(238, 238, 238);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    article{
+                        h3{
+                            font-size: 23px;
+                            color: #393939;
+                            margin-bottom: 30px;
+                        }
+                        :nth-child(2){
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-size: 17px;
+                        }
+                    }
+                }
+                .box2{
+                    background: rgb(192, 248, 255);
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .subRo2{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            .carousel {
+                height: 400px;
+                overflow: hidden;
+                position: relative;
+                .slider {
+                    display: flex;
+                    height: 100%;
+                    width: 200%;
+                    section {
+                        flex-basis: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                      }
+                  }
+                .control{
+                      ul {
+                        list-style: none;
+                        display: flex;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        margin: 0;
+                        padding: 0;
+                        transform: translate(-50%);
+                        li {
+                            width: 10px;
+                            height: 10px;
+                            background: #333;
+                            border: 2px solid #333;
+                            border-radius: 50px;
+                            margin: 10px;
+                            cursor: pointer;
+                          }
+                          li.selected {
+                            background: transparent;
+                          }
+                      }
+                }
+            }
+        }
+    }
+
+    
+    /*LINHA 2
+    **************************************/
+    .PT_row2{
+        padding: 100px 0;
+        background: #6ED0E4;
+        .subRow{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .col1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                article{
+                    width: 250px;
+                    height:250px;
+                    border-radius: 50%;
+                    background-image: url('../img/empresario.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .col2{
+                article{
+                    svg{
+                        width: 70px;
+                        fill: white;
+                        margin-bottom: 25px;
+                    }
+                    h2{
+                        font-size: 40px;
+                        color: white;
+                        margin-bottom: 25px;
+                    }
+                    p{
+                        font-size: 17px;
+                        color: rgb(236, 236, 236);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 575.98px){
+
+    header{
+        height: 620px;
+        .caixaInfo{max-width: 95%;
+            article{h1{font-size: 2.4rem;}p{font-size: 1,1rem;}}
+        }
+    }
+
+    #containerBody{
+        /*LINHA 1
+        **************************************/
+        .PT_row1{
+            .subRow{width: 95%;
+                .container{display: grid;grid-template-columns: 1fr;
+                .ps1{order: 2;}
+                .ps2{order: 1;}
+                .ps3{order: 3;}
+                .ps4{order: 4;}
+                .ps5{order: 6;}
+                .ps6{order: 5;}
+                }
+            }
+
+            .subRo2{
+                max-width: 95%;
+                .carousel{.slider{width: 400% !important;}}
+            }
+        }
+
+         /*LINHA 2
+        **************************************/
+        .PT_row2{
+            .subRow{
+                max-width: 95%;
+                grid-template-columns: 1fr;
+                .col1{margin-bottom: 15px;}
+                .col2{
+                    article{svg{width: 50px;}h2{font-size: 1.7rem;}p{font-size: 1rem;}}
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    header{
+        height: 620px;
+        .caixaInfo{max-width: 95%;
+            article{h1{font-size: 2.4rem;}p{font-size: 1,1rem;}}
+        }
+    }
+
+    #containerBody{
+
+        /*LINHA 1
+        **************************************/
+        .PT_row1{
+            .subRow{width: 95%;
+                .container{display: grid;grid-template-columns: 1fr;
+                .ps1{order: 2;}
+                .ps2{order: 1;}
+                .ps3{order: 3;}
+                .ps4{order: 4;}
+                .ps5{order: 6;}
+                .ps6{order: 5;}
+                }
+            }
+
+            .subRo2{
+                max-width: 95%;
+                .carousel{.slider{ width: 400% !important;}}
+            }
+        }
+
+
+        /*LINHA 2
+        **************************************/
+        .PT_row2{
+            .subRow{
+                max-width: 95%;
+                grid-template-columns: 1fr;
+                .col1{margin-bottom: 15px;}
+                .col2{
+                    article{svg{width: 50px;}h2{font-size: 1.7rem;}p{font-size: 1rem;}}
+                }
+            }
+        }
+    }
+
+}

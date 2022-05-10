@@ -124,10 +124,9 @@ header{
     ******************************************************/
     .row6{
         width: 100%;
-        padding: 50px 0;
+        padding: 50px 0 200px 0;
         .subRow6{
-            width: 80%;
-            max-width: 1120px;
+            max-width: 740px;
             margin: 0 auto;
             position: relative;
             .subRow6_row1{
@@ -140,46 +139,94 @@ header{
             }
             .subRow6_row2{
                 margin-bottom: 50px;
-                .carrousel{
-                    width: 100%;
+                .carousel {
                     height: 400px;
-                    position: relative;
                     overflow: hidden;
-                    border: solid 2px blue;
-                    .caixa_slide{
-                        width: 100%;
-                        max-width: 715px;
+                    position: relative;
+                    .slider {
+                        display: flex;
                         height: 100%;
-                        text-align: center;
-                        margin: 0 auto;
-                        border: solid 2px rgb(153, 255, 0);
-                        :nth-child(1){
-                            font-size: 17px;
-                            color: #7a7a7a;
-                            margin-bottom: 30px;
-                        }
-                        article{
-                            width:136px;
-                            height: 136px;
-                            border-radius: 50%;
-                            margin: 0 auto;
-                            margin-bottom: 20px;
-                            background: rgb(137, 134, 134);
-                            overflow: hidden;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
+                        width: 400%;
+                        section {
+                            flex-basis: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 20px;
+                            text-align: center;
+                            :nth-child(1){
+                                font-size: 17px;
+                                color: #7a7a7a;
+                                margin-bottom: 30px;
                             }
-                        }
-                        :nth-child(3){
-                            font-size: 17px;
-                            color: #7a7a7a;
-                        }
-                        :nth-child(4){
-                            font-size: 17px;
-                            color: #7331ce;
-                        }
+                            article{
+                                width:136px;
+                                height: 136px;
+                                border-radius: 50%;
+                                margin: 0 auto;
+                                margin-bottom: 20px;
+                                background: rgb(137, 134, 134);
+                                overflow: hidden;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            :nth-child(3){
+                                font-size: 17px;
+                                color: #7a7a7a;
+                            }
+                            :nth-child(4){
+                                font-size: 17px;
+                                color: #7331ce;
+                            }
+                          }
+                      }
+                    .control{
+                        .left, .right {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                          }
+                          .arrow i {
+                            svg{
+                                width: 10px;
+                                fill: #9e9d9dd3;
+                            }
+
+                          }
+                          .left {
+                            left: 10px;
+                          }
+                          .right {
+                            right: 10px;
+                          }
+
+                          ul {
+                            list-style: none;
+                            display: flex;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            margin: 0;
+                            padding: 0;
+                            transform: translate(-50%);
+                            li {
+                                width: 10px;
+                                height: 10px;
+                                background: #333;
+                                border: 2px solid #333;
+                                border-radius: 50px;
+                                margin: 10px;
+                                cursor: pointer;
+                              }
+                              li.selected {
+                                background: transparent;
+                              }
+                          }
                     }
                 }
             }
@@ -221,17 +268,17 @@ header{
         }
     }
 
-    .row7{
-        padding: 50px 0  250px 0;
-        width: 100%;
-        border: solid 2px red;
-        .subRow7{
-            width: 80%;
-            max-width: 1120px;
-            margin: 0 auto;
-            border: solid 2px rgb(51, 255, 0);
-        }
-    }
+    // .row7{
+    //     padding: 50px 0  250px 0;
+    //     width: 100%;
+    //     border: solid 2px red;
+    //     .subRow7{
+    //         width: 80%;
+    //         max-width: 1120px;
+    //         margin: 0 auto;
+    //         border: solid 2px rgb(51, 255, 0);
+    //     }
+    // }
 
 }
 

@@ -1,0 +1,285 @@
+/***********CORES**********/
+header .caixaInfo {
+  max-width: 700px;
+}
+header .caixaInfo article :nth-child(2) {
+  margin-bottom: 10px;
+}
+header .caixaInfo article p {
+  font-size: 17px;
+  color: white;
+  text-align: justify;
+}
+
+#containerBody {
+  /*LINHA 1
+  **************************************/
+  /*LINHA 2
+  **************************************/
+}
+#containerBody .PT_row1 {
+  padding: 50px 0;
+}
+#containerBody .PT_row1 .subRow {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#containerBody .PT_row1 .subRow .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: 0.7 ease-in-out;
+}
+#containerBody .PT_row1 .subRow .container .box1, #containerBody .PT_row1 .subRow .container .box2 {
+  height: 400px;
+}
+#containerBody .PT_row1 .subRow .container .box1 {
+  padding: 50px;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerBody .PT_row1 .subRow .container .box1 article h3 {
+  font-size: 23px;
+  color: #393939;
+  margin-bottom: 30px;
+}
+#containerBody .PT_row1 .subRow .container .box1 article :nth-child(2) {
+  margin-bottom: 20px;
+}
+#containerBody .PT_row1 .subRow .container .box1 article p {
+  font-size: 17px;
+}
+#containerBody .PT_row1 .subRow .container .box2 {
+  background: #c0f8ff;
+  overflow: hidden;
+}
+#containerBody .PT_row1 .subRow .container .box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#containerBody .PT_row1 .subRo2 {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#containerBody .PT_row1 .subRo2 .carousel {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#containerBody .PT_row1 .subRo2 .carousel .slider {
+  display: flex;
+  height: 100%;
+  width: 200%;
+}
+#containerBody .PT_row1 .subRo2 .carousel .slider section {
+  flex-basis: 100%;
+}
+#containerBody .PT_row1 .subRo2 .carousel .slider section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#containerBody .PT_row1 .subRo2 .carousel .control ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+#containerBody .PT_row1 .subRo2 .carousel .control ul li {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+#containerBody .PT_row1 .subRo2 .carousel .control ul li.selected {
+  background: transparent;
+}
+#containerBody .PT_row2 {
+  padding: 100px 0;
+  background: #6ED0E4;
+}
+#containerBody .PT_row2 .subRow {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#containerBody .PT_row2 .subRow .col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerBody .PT_row2 .subRow .col1 article {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("../img/empresario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#containerBody .PT_row2 .subRow .col2 article svg {
+  width: 70px;
+  fill: white;
+  margin-bottom: 25px;
+}
+#containerBody .PT_row2 .subRow .col2 article h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 25px;
+}
+#containerBody .PT_row2 .subRow .col2 article p {
+  font-size: 17px;
+  color: #ececec;
+}
+
+@media (max-width: 575.98px) {
+  header {
+    height: 620px;
+  }
+  header .caixaInfo {
+    max-width: 95%;
+  }
+  header .caixaInfo article h1 {
+    font-size: 2.4rem;
+  }
+  header .caixaInfo article p {
+    font-size: 1, 1rem;
+  }
+
+  #containerBody {
+    /*LINHA 1
+    **************************************/
+    /*LINHA 2
+    **************************************/
+  }
+  #containerBody .PT_row1 .subRow {
+    width: 95%;
+  }
+  #containerBody .PT_row1 .subRow .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #containerBody .PT_row1 .subRow .container .ps1 {
+    order: 2;
+  }
+  #containerBody .PT_row1 .subRow .container .ps2 {
+    order: 1;
+  }
+  #containerBody .PT_row1 .subRow .container .ps3 {
+    order: 3;
+  }
+  #containerBody .PT_row1 .subRow .container .ps4 {
+    order: 4;
+  }
+  #containerBody .PT_row1 .subRow .container .ps5 {
+    order: 6;
+  }
+  #containerBody .PT_row1 .subRow .container .ps6 {
+    order: 5;
+  }
+  #containerBody .PT_row1 .subRo2 {
+    max-width: 95%;
+  }
+  #containerBody .PT_row1 .subRo2 .carousel .slider {
+    width: 400% !important;
+  }
+  #containerBody .PT_row2 .subRow {
+    max-width: 95%;
+    grid-template-columns: 1fr;
+  }
+  #containerBody .PT_row2 .subRow .col1 {
+    margin-bottom: 15px;
+  }
+  #containerBody .PT_row2 .subRow .col2 article svg {
+    width: 50px;
+  }
+  #containerBody .PT_row2 .subRow .col2 article h2 {
+    font-size: 1.7rem;
+  }
+  #containerBody .PT_row2 .subRow .col2 article p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    height: 620px;
+  }
+  header .caixaInfo {
+    max-width: 95%;
+  }
+  header .caixaInfo article h1 {
+    font-size: 2.4rem;
+  }
+  header .caixaInfo article p {
+    font-size: 1, 1rem;
+  }
+
+  #containerBody {
+    /*LINHA 1
+    **************************************/
+    /*LINHA 2
+    **************************************/
+  }
+  #containerBody .PT_row1 .subRow {
+    width: 95%;
+  }
+  #containerBody .PT_row1 .subRow .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #containerBody .PT_row1 .subRow .container .ps1 {
+    order: 2;
+  }
+  #containerBody .PT_row1 .subRow .container .ps2 {
+    order: 1;
+  }
+  #containerBody .PT_row1 .subRow .container .ps3 {
+    order: 3;
+  }
+  #containerBody .PT_row1 .subRow .container .ps4 {
+    order: 4;
+  }
+  #containerBody .PT_row1 .subRow .container .ps5 {
+    order: 6;
+  }
+  #containerBody .PT_row1 .subRow .container .ps6 {
+    order: 5;
+  }
+  #containerBody .PT_row1 .subRo2 {
+    max-width: 95%;
+  }
+  #containerBody .PT_row1 .subRo2 .carousel .slider {
+    width: 400% !important;
+  }
+  #containerBody .PT_row2 .subRow {
+    max-width: 95%;
+    grid-template-columns: 1fr;
+  }
+  #containerBody .PT_row2 .subRow .col1 {
+    margin-bottom: 15px;
+  }
+  #containerBody .PT_row2 .subRow .col2 article svg {
+    width: 50px;
+  }
+  #containerBody .PT_row2 .subRow .col2 article h2 {
+    font-size: 1.7rem;
+  }
+  #containerBody .PT_row2 .subRow .col2 article p {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=pontoApoio.css.map */
