@@ -4,13 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    background: #735ee7;
     font-family: poppins,Sans-serif;
 }
 
 /***********CORES**********/
 $corMenu: #2d2d2d;
-$lilazPadrao: #735ee7;
+$lilazPadrao: #f6e100;
 
 
 header{
@@ -18,7 +17,7 @@ header{
     height: 670px;
     background:
     linear-gradient(
-        rgba(115, 94, 231, 0.819),rgba(115, 94, 231, 0.638)
+        #2d2d2dc7,#2d2d2da1
     ),
     url('../img/imgFundo.jpg') no-repeat;
     background-size: cover;
@@ -111,14 +110,14 @@ header{
                         font-size: 15px;
                         text-decoration: none;
                         &:hover{
-                            color: $lilazPadrao;
+                            color: #735ee7;
                             border-bottom: solid 2px #735ee7;
                         }
                     }
                 }
             }
             .ulStyle{
-                background: #735ee7;
+                background: $lilazPadrao;
                 padding: 10px 20px;
                 border-radius: 18px;
                 display: flex;
@@ -135,13 +134,13 @@ header{
                 }
                 &:hover{
                     background: white;
-                    outline: solid 1px #735ee7;
+                    outline: solid 1px #f6e100;
                     color: $lilazPadrao;
                     transition: .2s ease-in;
                 }
             }
             .ulStyle:hover > svg, .ulStyle:hover > li a{
-                fill: #735ee7;
+                fill: #f6e100;
                 color: $lilazPadrao;
                 transition: .2s ease-in;
             }
@@ -322,12 +321,12 @@ header{
                         }
                         a:hover{
                             background: white;
-                            outline: solid 1px #735ee7;
+                            outline: solid 1px #f6e100;
                             color: $lilazPadrao;
                             transition: .2s ease-in;
                         }
                         a:hover > span svg{
-                            fill: #735ee7 !important;
+                            fill: #f6e100 !important;
                             transition: .2s ease-in;
                         }
                     }
@@ -447,12 +446,12 @@ header{
                         }
                         a:hover{
                             background: white;
-                            outline: solid 1px #735ee7;
+                            outline: solid 1px #f6e100;
                             color: $lilazPadrao;
                             transition: .2s ease-in;
                         }
                         a:hover > span svg{
-                            fill: #735ee7 !important;
+                            fill: #f6e100 !important;
                             transition: .2s ease-in;
                         }
                     }
@@ -465,6 +464,7 @@ header{
     ******************************************************/
     .row4{
         padding: 50px 0;
+        background: $lilazPadrao;
         .subRow{
             width: 80%;
             max-width: 1120px;
@@ -481,7 +481,7 @@ header{
                     width: 200px;
                     margin: 0 auto;
                     display: block;
-                    border-bottom: solid  4px rgb(204, 217, 12);
+                    border-bottom: solid  4px rgb(151, 150, 150);
                     padding: 15px 0 0 0;
                   }
                 }
@@ -516,7 +516,7 @@ header{
                         width: 100px;
                         margin: 0 auto;
                         display: block;
-                        border-bottom: solid  4px rgb(204, 217, 12);
+                        border-bottom: solid  2px rgb(151, 150, 150);
                         padding: 15px 0 0 0;
                     }
                }
@@ -576,12 +576,12 @@ header{
                         }
                         a:hover{
                             background: white;
-                            outline: solid 1px #735ee7;
+                            outline: solid 1px #f6e100;
                             color: $lilazPadrao;
                             transition: .2s ease-in;
                         }
                         a:hover > span svg{
-                            fill: #735ee7 !important;
+                            fill: #f6e100 !important;
                             transition: .2s ease-in;
                         }
                     }
@@ -602,7 +602,18 @@ header{
             }
         }
 
-        .subRow2{
+    }
+
+
+    /*LIINHA - RODAPE
+    ******************************************************/
+    .rowRodape{
+        width: 100%;
+        padding: 250px 0 50px 0;
+        background: #f9f9f9;
+        position: relative;
+
+        .subRowGeral1{
             width: 80%;
             max-width: 1120px;
             height: 307px;
@@ -616,7 +627,7 @@ header{
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0);
-            bottom: -150px;
+            top: -150px;
             z-index: 997;
             .divTexDigitalizado{
                 text-align: center;
@@ -625,7 +636,7 @@ header{
                     font-size: 35px;
                     color: white;
                     span{
-                        color: #f3c500;
+                        color: #474747;
                         font-weight: 600;
                     }
                     #writing::after{
@@ -663,26 +674,17 @@ header{
                     }
                     a:hover{
                         background: white;
-                        outline: solid 1px #735ee7;
+                        outline: solid 1px #f6e100;
                         color: $lilazPadrao;
                         transition: .2s ease-in;
                     }
                     a:hover > span svg{
-                        fill: #735ee7 !important;
+                        fill: #f6e100 !important;
                         transition: .2s ease-in;
                     }
                 }
             }
         }
-    }
-
-
-    /*LIINHA 6
-    ******************************************************/
-    .row6{
-        width: 100%;
-        padding: 250px 0 50px 0;
-        background: #f9f9f9;
         .subRow{
             width: 80%;
             max-width: 1120px;
@@ -766,20 +768,9 @@ header{
 
 @media (max-width: 575.98px) {
 
-    header{
-        width: 100%;
-        height: 500px;
-        .caixaInfo{
-            padding: 20px 0;
-            article{
-                h1{
-                    font-size: 2.7rem; 
-                 }
-                 h4{
-                     font-size: 1rem;
-                     font-weight: 200;
-                 }
-            }
+    header{width: 100%; height: 500px;
+        .caixaInfo{padding: 20px 0;
+            article{h1{font-size: 2.7rem; } h4{font-size: 1rem;font-weight: 200;}}
         }
     }
 
@@ -787,16 +778,9 @@ header{
     **********************************************/
     #containerBody{
         .row2{
-            .Subrow2{
-                width: 95%;
-                flex-direction: column;
-                .row2_col1{
-                    max-width: 100%;
-                    position: static;
-                }
-                .row2_col2{
-                    max-width: 100%;
-                }
+            .Subrow2{width: 95%;flex-direction: column;
+                .row2_col1{max-width: 100%;position: static;}
+                .row2_col2{max-width: 100%;}
             }
         }
     }
@@ -805,30 +789,12 @@ header{
     /*LIINHA 3
     ******************************************************/
     #containerBody{
-        .row3{
-            padding: 50px 0 15px 0;
-            .subRow1{
-                width: 95%;
-                .subRow1_col{
-                    h1{
-
-                    }
-                    p{
-                        max-width: 100%;
-                    }
-                }
+        .row3{padding: 50px 0 15px 0;
+            .subRow1{width: 95%;
+                .subRow1_col{p{max-width: 100%;}}
             }
-            .subRow2{
-                width: 95%;
-                grid-template-columns: 1fr;
-                .col1,.col2,.col3{
-                    max-width: 100%;
-                    article{
-                        div{
-
-                        }
-                    }
-                }
+            .subRow2{width: 95%; grid-template-columns: 1fr;
+                .col1,.col2,.col3{max-width: 100%;}
             }
         }
     }
@@ -836,84 +802,42 @@ header{
 
     /*LIINHA 4
     ******************************************************/
-    #containerBody{
-        .row4{
-            display: none;
-        }
-    }
-
+    #containerBody{.row4{ display: none;}}
 
     /*LIINHA 5
     ******************************************************/
     #containerBody{
         .row5{
-            .subRow1{
-                width: 95%;
-                flex-direction: column;
-                .col1{
-                    width: 100%;
-                    max-width: 100%;
-                    order: 2;
-                    article{
-                        width: 100%;
-                        max-width: 530px;
-                        h1{
-
-                        }
+            .subRow1{width: 95%; flex-direction: column;
+                .col1{width: 100%; max-width: 100%; order: 2;
+                    article{width: 100%; max-width: 530px;}
+                }
+                .col2{width: 100%; order: 1; margin-bottom: 25px;
+                    div{width: 100%; height: 500px;
+                        img{margin-top: 0; width: 100%;}
                     }
                 }
-                .col2{
-                    width: 100%;
-                    order: 1;
-                    margin-bottom: 25px;
-                    div{
-                        width: 100%;
-                        height: 500px;
-                        img{
-                            margin-top: 0;
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-            .subRow2{
-                width: 100%;
-                border-radius: 90px 0 0 0;
             }
         }
     }
 
-
-      /*LIINHA 6
+      /*LIINHA - RODAPÉ
     ******************************************************/
     #containerBody{
-        .row6{
-            .subRow{
-                width: 95%;
+        .rowRodape{
+            .subRowGeral1{width: 100%; border-radius: 90px 0 0 0;}
+            .subRow{width: 95%;
                 .subSubRow1{
                     .divRedesSociais{
                         article{
-                            a{
-                                width: 30px;
-                                height: 30px;
-                                svg{
-                                    width: 13px;
-                                    fill: white;
-                                }
+                            a{width: 30px; height: 30px;
+                                svg{width: 13px; fill: white;}
                             }
                         }
                     }
                 }
-                .subSubRow2{
-                    display: none;
-                }
-                .subSubRow3{
-                    .copy{
-                        p{
-                            font-size: 12px;
-                        }
-                    }
-                }
+                .subSubRow2{display: none;}
+                .subSubRow3{.copy{p{font-size: 12px;}}}
             }
         }
     }
@@ -922,19 +846,11 @@ header{
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-    header{
-        width: 100%;
-        height: 500px;
-        .caixaInfo{
-            padding: 20px 0;
+    header{width: 100%; height: 500px;
+        .caixaInfo{padding: 20px 0;
             article{
-                h1{
-                    font-size: 2.7rem; 
-                 }
-                 h4{
-                     font-size: 1rem;
-                     font-weight: 200;
-                 }
+                h1{font-size: 2.7rem;}
+                h4{font-size: 1rem; font-weight: 200;}
             }
         }
     }
@@ -943,16 +859,9 @@ header{
     **********************************************/
     #containerBody{
         .row2{
-            .Subrow2{
-                width: 95%;
-                flex-direction: column;
-                .row2_col1{
-                    max-width: 100%;
-                    position: static;
-                }
-                .row2_col2{
-                    max-width: 100%;
-                }
+            .Subrow2{width: 95%; flex-direction: column;
+                .row2_col1{max-width: 100%; position: static;}
+                .row2_col2{max-width: 100%;}
             }
         }
     }
@@ -960,30 +869,12 @@ header{
     /*LIINHA 3
     ******************************************************/
     #containerBody{
-        .row3{
-            padding: 50px 0 15px 0;
-            .subRow1{
-                width: 95%;
-                .subRow1_col{
-                    h1{
-
-                    }
-                    p{
-                        max-width: 100%;
-                    }
-                }
+        .row3{padding: 50px 0 15px 0;
+            .subRow1{width: 95%;
+                .subRow1_col{p{max-width: 100%;}}
             }
-            .subRow2{
-                width: 95%;
-                grid-template-columns: 1fr;
-                .col1,.col2,.col3{
-                    max-width: 100%;
-                    article{
-                        div{
-
-                        }
-                    }
-                }
+            .subRow2{width: 95%; grid-template-columns: 1fr;
+                .col1,.col2,.col3{max-width: 100%;}
             }
         }
     }
@@ -991,84 +882,33 @@ header{
 
     /*LIINHA 4
     ******************************************************/
-    #containerBody{
-        .row4{
-            display: none;
-        }
-    }
-
+    #containerBody{.row4{display: none;}}
 
     /*LIINHA 5
     ******************************************************/
     #containerBody{
         .row5{
-            .subRow1{
-                width: 95%;
-                flex-direction: column;
-                .col1{
-                    width: 100%;
-                    max-width: 100%;
-                    order: 2;
-                    article{
-                        width: 100%;
-                        max-width: 530px;
-                        h1{
-
-                        }
-                    }
+            .subRow1{width: 95%; flex-direction: column;
+                .col1{ width: 100%; max-width: 100%; order: 2;
+                    article{width: 100%;max-width: 530px;}
                 }
-                .col2{
-                    width: 100%;
-                    order: 1;
-                    margin-bottom: 25px;
-                    div{
-                        width: 100%;
-                        height: 500px;
-                        img{
-                            margin-top: 0;
-                            width: 100%;
-                        }
-                    }
+                .col2{ width: 100%; order: 1; margin-bottom: 25px;
+                    div{ width: 100%; height: 500px;img{margin-top: 0;width: 100%;}}
                 }
-            }
-            .subRow2{
-                width: 100%;
-                border-radius: 90px 0 0 0;
             }
         }
     }
 
 
-     /*LIINHA 6
+     /*LIINHA -  RODAPE
     ******************************************************/
     #containerBody{
-        .row6{
-            .subRow{
-                width: 95%;
-                .subSubRow1{
-                    .divRedesSociais{
-                        article{
-                            a{
-                                width: 30px;
-                                height: 30px;
-                                svg{
-                                    width: 13px;
-                                    fill: white;
-                                }
-                            }
-                        }
-                    }
-                }
-                .subSubRow2{
-                    display: none;
-                }
-                .subSubRow3{
-                    .copy{
-                        p{
-                            font-size: 12px;
-                        }
-                    }
-                }
+        .rowRodape{
+            .subRowGeral1{width: 100%;border-radius: 90px 0 0 0;}
+            .subRow{width: 95%;
+                .subSubRow1{.divRedesSociais{article{a{width: 30px;height: 30px;svg{width: 13px;fill: white;}}}}}
+                .subSubRow2{display: none;}
+                .subSubRow3{.copy{p{font-size: 12px;}}}
             }
         }
     }
@@ -1078,25 +918,14 @@ header{
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-    header{
-        width: 100%;
-        height: 500px;
-        .caixaInfo{
-            padding: 20px 0;
-        }
-    }
+    header{width: 100%;height: 500px;.caixaInfo{padding: 20px 0;}}
 
     /*LINHA 2
     **********************************************/
     #containerBody{
-        .row2{
-            padding: 50px 0 165px 0;
-            .Subrow2{
-                width: 80%;
-                    .row2_col1{
-                    width: 100%;
-                    max-width: 360px;
-                }
+        .row2{padding: 50px 0 165px 0;
+            .Subrow2{width: 80%;
+                .row2_col1{width: 100%; max-width: 360px;}
             }
         }
     }
@@ -1105,89 +934,38 @@ header{
     ******************************************************/
     #containerBody{
         .row3{
-            .subRow1{
-                width: 95%;
-                .subRow1_col{
-                    h1{
-
-                    }
-                    p{
-
-                    }
-                }
-            }
-            .subRow2{
-                width: 95%;
-                max-width: 1120px;
-                .col1,.col2,.col3{
-                    width: 100%;
-                    article{
-                        div{
-
-                        }
-                    }
-                }
+            .subRow1{ width: 95%;}
+            .subRow2{width: 95%;max-width: 1120px;
+                .col1,.col2,.col3{width: 100%;}
             }
         }
     }
 
     /*LIINHA 4
     ******************************************************/
-    #containerBody{
-        .row4{
-            display: none;
-        }
-    }
-
+    #containerBody{ .row4{display: none;}}
 
     /*LIINHA 5
     ******************************************************/
     #containerBody{
         .row5{
-            .subRow1{
-                width: 95%;
-                .col1{
-                    width: 45%;
-                    max-width: 530px;
-                    article{
-                        width: 70%;
-                        h1{
-
-                        }
-                    }
+            .subRow1{width: 95%;
+                .col1{width: 45%;max-width: 530px;
+                    article{width: 70%;}
                 }
-                .col2{
-                    width: 55%;
-                    div{
-                        width: 100%;
-                        height: 300px;
-                        img{
-                            margin-top: -78px;
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-
-            .subRow2{
-                width: 100%;
-                .divTexDigitalizado{
+                .col2{width: 55%;
+                    div{width: 100%;height: 300px;img{margin-top: -78px; width: 100%;}}
                 }
             }
         }
     }
     
 
-    /*LIINHA 6
+    /*LIINHA -RODAPÉ
     ******************************************************/
-    #containerBody{
-        .row6{
-            .subRow{
-                width: 95%;
-
-            }
-        }
-    }
+    #containerBody{.rowRodape{
+        .subRowGeral1{width: 100%;}
+        .subRow{width: 95%;}}}
     
 
 }
@@ -1198,36 +976,14 @@ header{
     ******************************************************/
     #containerBody{
         .row3{
-            .subRow1{
-                width: 90%;
-                .subRow1_col{
-                    h1{
-
-                    }
-                    p{
-
-                    }
-                }
-            }
-            .subRow2{
-                width: 90%;
-                max-width: 1120px;
-                .col1,.col2,.col3{
-                    width: 100%;
-                    article{
-                        text-align: center;
-                        div{
-
-                        }
-                    }
+            .subRow1{ width: 90%;}
+            .subRow2{width: 90%;
+                .col1,.col2,.col3{width: 100%;
+                    article{text-align: center;}
                 }
             }
         }
     }
 
     
-}
-
-@media (min-width: 1200px) {
-
 }

@@ -1,0 +1,114 @@
+
+$corMenu: #2d2d2d;
+$lilazPadrao: #f6e100;
+
+header{
+    height: 450px;
+    .caixaInfo{
+        article{
+            h1::after{
+                content: '';
+                width: 200px;
+                margin: 0 auto;
+                display: block;
+                border-bottom: solid  2px rgb(151, 150, 150);
+                padding: 15px 0 0 0;
+            }
+        }
+    }
+}
+
+
+#containerBody{
+    .row2{
+        padding: 50px 0  200px 0;
+        .Subrow2{
+                padding: 0 0 60px 0;
+                .row2_col1{
+                box-shadow: none;
+                position: static;
+                article{
+                    :first-child { 
+                        margin-bottom: 15px;
+                        font-size: 25px;
+                    }
+                    h2{
+                        font-size: 50px;
+                        margin-bottom: 10px;
+                        color: $lilazPadrao;
+                    }
+                    p{margin: 0;}
+                }
+            }
+            .row2_col2{
+                .subDiv{background-image: url('../img/imgFundo3.jpg');}
+            }
+        }
+
+        .Subrow3{
+            background: #2aa3f5;
+            padding: 20px 0;
+            .sub{
+                width: 80%;
+                max-width: 1120px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .divp1{
+                    max-width: 230px;
+                    p{
+                        font-size: 3rem;
+                        color: white;
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .divp2{
+                    max-width: 600px;
+                    p{
+                        font-size: 17px;
+                        color: white;
+                    }
+                }
+                article{
+                    width: 2px;
+                    height: 100px;
+                    background: $lilazPadrao;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 575.98px){
+    #containerBody{
+        .Subrow3{
+            .sub{
+                flex-direction: column;
+                .divp1{max-width: 100%; margin-bottom: 25px;}
+                .divp2{max-width: 100%;}
+                article{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    #containerBody{
+        .Subrow3{
+            .sub{
+                flex-direction: column;
+                .divp1{max-width: 100%; margin-bottom: 25px;}
+                .divp2{max-width: 100%;}
+                article{
+                    display: none;
+                }
+            }
+        }
+    }
+}

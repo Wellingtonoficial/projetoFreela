@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,6 @@
 }
 
 body {
-  background: #735ee7;
   font-family: poppins, Sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
 header {
   width: 100%;
   height: 670px;
-  background: linear-gradient(rgba(115, 94, 231, 0.819), rgba(115, 94, 231, 0.638)), url("../img/imgFundo.jpg") no-repeat;
+  background: linear-gradient(#2d2d2dc7, #2d2d2da1), url("../img/imgFundo.jpg") no-repeat;
   background-size: cover;
 }
 header .divLogo_menuHamburguer {
@@ -112,7 +112,7 @@ header nav .menu .menuUl li a:hover {
   border-bottom: solid 2px #735ee7;
 }
 header nav .menu .ulStyle {
-  background: #735ee7;
+  background: #f6e100;
   padding: 10px 20px;
   border-radius: 18px;
   display: flex;
@@ -130,13 +130,13 @@ header nav .menu .ulStyle li a {
 }
 header nav .menu .ulStyle:hover {
   background: white;
-  outline: solid 1px #735ee7;
-  color: #735ee7;
+  outline: solid 1px #f6e100;
+  color: #f6e100;
   transition: 0.2s ease-in;
 }
 header nav .menu .ulStyle:hover > svg, header nav .menu .ulStyle:hover > li a {
-  fill: #735ee7;
-  color: #735ee7;
+  fill: #f6e100;
+  color: #f6e100;
   transition: 0.2s ease-in;
 }
 header nav .menu svg {
@@ -181,7 +181,7 @@ header .caixaInfo article span {
 }
 header .caixaInfo article span a {
   text-decoration: none;
-  color: #735ee7;
+  color: #f6e100;
 }
 header .caixaInfo article span:hover {
   background: none;
@@ -221,7 +221,7 @@ header .caixaInfo article span:hover > a {
     width: 100%;
   }
   header nav .menu .menuUl li:hover {
-    background: #735ee7;
+    background: #f6e100;
   }
   header nav .menu .menuUl li a {
     width: 100%;
@@ -248,7 +248,7 @@ header .caixaInfo article span:hover > a {
   ******************************************************/
   /*LIINHA 5
   ******************************************************/
-  /*LIINHA 6
+  /*LIINHA - RODAPE
   ******************************************************/
 }
 #containerBody .row2 {
@@ -298,7 +298,7 @@ header .caixaInfo article span:hover > a {
   font-weight: 800;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a {
-  background: #735ee7;
+  background: #f6e100;
   color: white;
   width: 203px;
   height: 43px;
@@ -315,12 +315,12 @@ header .caixaInfo article span:hover > a {
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a:hover {
   background: white;
-  outline: solid 1px #735ee7;
-  color: #735ee7;
+  outline: solid 1px #f6e100;
+  color: #f6e100;
   transition: 0.2s ease-in;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a:hover > span svg {
-  fill: #735ee7 !important;
+  fill: #f6e100 !important;
   transition: 0.2s ease-in;
 }
 #containerBody .row2 .Subrow2 .row2_col2 {
@@ -359,7 +359,7 @@ header .caixaInfo article span:hover > a {
 }
 #containerBody .row3 .subRow1 .subRow1_col h1 {
   font-size: 45px;
-  color: #735ee7;
+  color: #f6e100;
   margin-bottom: 20px;
 }
 #containerBody .row3 .subRow1 .subRow1_col p {
@@ -390,7 +390,7 @@ header .caixaInfo article span:hover > a {
 #containerBody .row3 .subRow2 .col1 article div, #containerBody .row3 .subRow2 .col2 article div, #containerBody .row3 .subRow2 .col3 article div {
   width: 120px;
   height: 120px;
-  background: #735ee7;
+  background: #f6e100;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -413,7 +413,7 @@ header .caixaInfo article span:hover > a {
   margin-bottom: 30px;
 }
 #containerBody .row3 .subRow2 .col1 article .btnRow3 a, #containerBody .row3 .subRow2 .col2 article .btnRow3 a, #containerBody .row3 .subRow2 .col3 article .btnRow3 a {
-  background: #735ee7;
+  background: #f6e100;
   color: white;
   width: 203px;
   height: 43px;
@@ -431,16 +431,17 @@ header .caixaInfo article span:hover > a {
 }
 #containerBody .row3 .subRow2 .col1 article .btnRow3 a:hover, #containerBody .row3 .subRow2 .col2 article .btnRow3 a:hover, #containerBody .row3 .subRow2 .col3 article .btnRow3 a:hover {
   background: white;
-  outline: solid 1px #735ee7;
-  color: #735ee7;
+  outline: solid 1px #f6e100;
+  color: #f6e100;
   transition: 0.2s ease-in;
 }
 #containerBody .row3 .subRow2 .col1 article .btnRow3 a:hover > span svg, #containerBody .row3 .subRow2 .col2 article .btnRow3 a:hover > span svg, #containerBody .row3 .subRow2 .col3 article .btnRow3 a:hover > span svg {
-  fill: #735ee7 !important;
+  fill: #f6e100 !important;
   transition: 0.2s ease-in;
 }
 #containerBody .row4 {
   padding: 50px 0;
+  background: #f6e100;
 }
 #containerBody .row4 .subRow {
   width: 80%;
@@ -460,7 +461,7 @@ header .caixaInfo article span:hover > a {
   width: 200px;
   margin: 0 auto;
   display: block;
-  border-bottom: solid 4px #ccd90c;
+  border-bottom: solid 4px #979696;
   padding: 15px 0 0 0;
 }
 #containerBody .row4 .subRow .subRow2 {
@@ -496,7 +497,7 @@ header .caixaInfo article span:hover > a {
   width: 100px;
   margin: 0 auto;
   display: block;
-  border-bottom: solid 4px #ccd90c;
+  border-bottom: solid 2px #979696;
   padding: 15px 0 0 0;
 }
 #containerBody .row5 {
@@ -524,7 +525,7 @@ header .caixaInfo article span:hover > a {
 }
 #containerBody .row5 .subRow1 .col1 article h1 {
   font-size: 55px;
-  color: #735ee7;
+  color: #f6e100;
   margin-bottom: 20px;
   line-height: 55px;
 }
@@ -535,7 +536,7 @@ header .caixaInfo article span:hover > a {
   margin-bottom: 40px;
 }
 #containerBody .row5 .subRow1 .col1 article .btnRow5 a {
-  background: #735ee7;
+  background: #f6e100;
   color: white;
   width: 203px;
   height: 43px;
@@ -552,12 +553,12 @@ header .caixaInfo article span:hover > a {
 }
 #containerBody .row5 .subRow1 .col1 article .btnRow5 a:hover {
   background: white;
-  outline: solid 1px #735ee7;
-  color: #735ee7;
+  outline: solid 1px #f6e100;
+  color: #f6e100;
   transition: 0.2s ease-in;
 }
 #containerBody .row5 .subRow1 .col1 article .btnRow5 a:hover > span svg {
-  fill: #735ee7 !important;
+  fill: #f6e100 !important;
   transition: 0.2s ease-in;
 }
 #containerBody .row5 .subRow1 .col2 {
@@ -573,12 +574,18 @@ header .caixaInfo article span:hover > a {
   margin-top: -78px;
   width: 598px;
 }
-#containerBody .row5 .subRow2 {
+#containerBody .rowRodape {
+  width: 100%;
+  padding: 250px 0 50px 0;
+  background: #f9f9f9;
+  position: relative;
+}
+#containerBody .rowRodape .subRowGeral1 {
   width: 80%;
   max-width: 1120px;
   height: 307px;
   margin: 0 auto;
-  background: #735ee7;
+  background: #f6e100;
   border-radius: 0 90px 0 90px;
   display: flex;
   justify-content: center;
@@ -587,22 +594,22 @@ header .caixaInfo article span:hover > a {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: -150px;
+  top: -150px;
   z-index: 997;
 }
-#containerBody .row5 .subRow2 .divTexDigitalizado {
+#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado {
   text-align: center;
   margin-bottom: 50px;
 }
-#containerBody .row5 .subRow2 .divTexDigitalizado p {
+#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado p {
   font-size: 35px;
   color: white;
 }
-#containerBody .row5 .subRow2 .divTexDigitalizado p span {
-  color: #f3c500;
+#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado p span {
+  color: #474747;
   font-weight: 600;
 }
-#containerBody .row5 .subRow2 .divTexDigitalizado p #writing::after {
+#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado p #writing::after {
   content: "|";
   margin-left: 5px;
   animation: blink 0.7s infinite;
@@ -615,7 +622,7 @@ header .caixaInfo article span:hover > a {
     opacity: 0;
   }
 }
-#containerBody .row5 .subRow2 .divBtnRow5 .btnRow5 a {
+#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a {
   outline: solid 1px white;
   color: white;
   width: 203px;
@@ -627,52 +634,47 @@ header .caixaInfo article span:hover > a {
   align-items: center;
   gap: 7px;
 }
-#containerBody .row5 .subRow2 .divBtnRow5 .btnRow5 a svg {
+#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a svg {
   width: 15px;
   fill: white;
 }
-#containerBody .row5 .subRow2 .divBtnRow5 .btnRow5 a:hover {
+#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a:hover {
   background: white;
-  outline: solid 1px #735ee7;
-  color: #735ee7;
+  outline: solid 1px #f6e100;
+  color: #f6e100;
   transition: 0.2s ease-in;
 }
-#containerBody .row5 .subRow2 .divBtnRow5 .btnRow5 a:hover > span svg {
-  fill: #735ee7 !important;
+#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a:hover > span svg {
+  fill: #f6e100 !important;
   transition: 0.2s ease-in;
 }
-#containerBody .row6 {
-  width: 100%;
-  padding: 250px 0 50px 0;
-  background: #f9f9f9;
-}
-#containerBody .row6 .subRow {
+#containerBody .rowRodape .subRow {
   width: 80%;
   max-width: 1120px;
   margin: 0 auto;
 }
-#containerBody .row6 .subRow .subSubRow1 {
+#containerBody .rowRodape .subRow .subSubRow1 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
 }
-#containerBody .row6 .subRow .subSubRow1 .divLogo img {
+#containerBody .rowRodape .subRow .subSubRow1 .divLogo img {
   width: 70px;
 }
-#containerBody .row6 .subRow .subSubRow1 .traco {
+#containerBody .rowRodape .subRow .subSubRow1 .traco {
   width: 2px;
   height: 52px;
-  background: #735ee7;
+  background: #f6e100;
   margin: 0 30px;
 }
-#containerBody .row6 .subRow .subSubRow1 .divRedesSociais {
+#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais {
   display: flex;
 }
-#containerBody .row6 .subRow .subSubRow1 .divRedesSociais article {
+#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article {
   margin-right: 15px;
 }
-#containerBody .row6 .subRow .subSubRow1 .divRedesSociais article a {
+#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
   width: 40px;
   height: 40px;
   background: #DADADA;
@@ -682,34 +684,34 @@ header .caixaInfo article span:hover > a {
   justify-content: center;
   align-items: center;
 }
-#containerBody .row6 .subRow .subSubRow1 .divRedesSociais article a:hover {
-  background: #735ee7;
+#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a:hover {
+  background: #f6e100;
 }
-#containerBody .row6 .subRow .subSubRow1 .divRedesSociais article a svg {
+#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
   width: 18px;
   fill: white;
 }
-#containerBody .row6 .subRow .subSubRow2 {
+#containerBody .rowRodape .subRow .subSubRow2 {
   margin-bottom: 60px;
 }
-#containerBody .row6 .subRow .subSubRow2 .menuFooter ul {
+#containerBody .rowRodape .subRow .subSubRow2 .menuFooter ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#containerBody .row6 .subRow .subSubRow2 .menuFooter ul li a {
+#containerBody .rowRodape .subRow .subSubRow2 .menuFooter ul li a {
   text-decoration: none;
   color: #a7a5a5;
   font-size: 16px;
 }
-#containerBody .row6 .subRow .subSubRow2 .menuFooter ul li a:hover {
+#containerBody .rowRodape .subRow .subSubRow2 .menuFooter ul li a:hover {
   color: #cbc9c9;
   transition: 0.2s ease-in;
 }
-#containerBody .row6 .subRow .subSubRow3 .copy {
+#containerBody .rowRodape .subRow .subSubRow3 .copy {
   text-align: center;
 }
-#containerBody .row6 .subRow .subSubRow3 .copy p {
+#containerBody .rowRodape .subRow .subSubRow3 .copy p {
   color: #a7a5a5;
   font-size: 16px;
 }
@@ -762,6 +764,7 @@ header .caixaInfo article span:hover > a {
   #containerBody .row3 .subRow2 .col1, #containerBody .row3 .subRow2 .col2, #containerBody .row3 .subRow2 .col3 {
     max-width: 100%;
   }
+
   /*LIINHA 4
   ******************************************************/
   #containerBody .row4 {
@@ -796,28 +799,28 @@ header .caixaInfo article span:hover > a {
     margin-top: 0;
     width: 100%;
   }
-  #containerBody .row5 .subRow2 {
+
+  /*LIINHA - RODAPÉ
+  ******************************************************/
+  #containerBody .rowRodape .subRowGeral1 {
     width: 100%;
     border-radius: 90px 0 0 0;
   }
-
-  /*LIINHA 6
-  ******************************************************/
-  #containerBody .row6 .subRow {
+  #containerBody .rowRodape .subRow {
     width: 95%;
   }
-  #containerBody .row6 .subRow .subSubRow1 .divRedesSociais article a {
+  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
     width: 30px;
     height: 30px;
   }
-  #containerBody .row6 .subRow .subSubRow1 .divRedesSociais article a svg {
+  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
     width: 13px;
     fill: white;
   }
-  #containerBody .row6 .subRow .subSubRow2 {
+  #containerBody .rowRodape .subRow .subSubRow2 {
     display: none;
   }
-  #containerBody .row6 .subRow .subSubRow3 .copy p {
+  #containerBody .rowRodape .subRow .subSubRow3 .copy p {
     font-size: 12px;
   }
 }
@@ -869,6 +872,7 @@ header .caixaInfo article span:hover > a {
   #containerBody .row3 .subRow2 .col1, #containerBody .row3 .subRow2 .col2, #containerBody .row3 .subRow2 .col3 {
     max-width: 100%;
   }
+
   /*LIINHA 4
   ******************************************************/
   #containerBody .row4 {
@@ -903,28 +907,28 @@ header .caixaInfo article span:hover > a {
     margin-top: 0;
     width: 100%;
   }
-  #containerBody .row5 .subRow2 {
+
+  /*LIINHA -  RODAPE
+  ******************************************************/
+  #containerBody .rowRodape .subRowGeral1 {
     width: 100%;
     border-radius: 90px 0 0 0;
   }
-
-  /*LIINHA 6
-  ******************************************************/
-  #containerBody .row6 .subRow {
+  #containerBody .rowRodape .subRow {
     width: 95%;
   }
-  #containerBody .row6 .subRow .subSubRow1 .divRedesSociais article a {
+  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
     width: 30px;
     height: 30px;
   }
-  #containerBody .row6 .subRow .subSubRow1 .divRedesSociais article a svg {
+  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
     width: 13px;
     fill: white;
   }
-  #containerBody .row6 .subRow .subSubRow2 {
+  #containerBody .rowRodape .subRow .subSubRow2 {
     display: none;
   }
-  #containerBody .row6 .subRow .subSubRow3 .copy p {
+  #containerBody .rowRodape .subRow .subSubRow3 .copy p {
     font-size: 12px;
   }
 }
@@ -962,6 +966,7 @@ header .caixaInfo article span:hover > a {
   #containerBody .row3 .subRow2 .col1, #containerBody .row3 .subRow2 .col2, #containerBody .row3 .subRow2 .col3 {
     width: 100%;
   }
+
   /*LIINHA 4
   ******************************************************/
   #containerBody .row4 {
@@ -991,12 +996,13 @@ header .caixaInfo article span:hover > a {
     margin-top: -78px;
     width: 100%;
   }
-  #containerBody .row5 .subRow2 {
+
+  /*LIINHA -RODAPÉ
+  ******************************************************/
+  #containerBody .rowRodape .subRowGeral1 {
     width: 100%;
   }
-  /*LIINHA 6
-  ******************************************************/
-  #containerBody .row6 .subRow {
+  #containerBody .rowRodape .subRow {
     width: 95%;
   }
 }
@@ -1008,7 +1014,6 @@ header .caixaInfo article span:hover > a {
   }
   #containerBody .row3 .subRow2 {
     width: 90%;
-    max-width: 1120px;
   }
   #containerBody .row3 .subRow2 .col1, #containerBody .row3 .subRow2 .col2, #containerBody .row3 .subRow2 .col3 {
     width: 100%;

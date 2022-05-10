@@ -1,0 +1,104 @@
+header {
+  height: 450px;
+}
+header .caixaInfo article h1::after {
+  content: "";
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  border-bottom: solid 2px #979696;
+  padding: 15px 0 0 0;
+}
+
+#containerBody .row2 {
+  padding: 50px 0 200px 0;
+}
+#containerBody .row2 .Subrow2 {
+  padding: 0 0 60px 0;
+}
+#containerBody .row2 .Subrow2 .row2_col1 {
+  box-shadow: none;
+  position: static;
+}
+#containerBody .row2 .Subrow2 .row2_col1 article :first-child {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+#containerBody .row2 .Subrow2 .row2_col1 article h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #f6e100;
+}
+#containerBody .row2 .Subrow2 .row2_col1 article p {
+  margin: 0;
+}
+#containerBody .row2 .Subrow2 .row2_col2 .subDiv {
+  background-image: url("../img/imgFundo3.jpg");
+}
+#containerBody .row2 .Subrow3 {
+  background: #2aa3f5;
+  padding: 20px 0;
+}
+#containerBody .row2 .Subrow3 .sub {
+  width: 80%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerBody .row2 .Subrow3 .sub .divp1 {
+  max-width: 230px;
+}
+#containerBody .row2 .Subrow3 .sub .divp1 p {
+  font-size: 3rem;
+  color: white;
+}
+#containerBody .row2 .Subrow3 .sub .divp1 p span {
+  font-weight: 600;
+}
+#containerBody .row2 .Subrow3 .sub .divp2 {
+  max-width: 600px;
+}
+#containerBody .row2 .Subrow3 .sub .divp2 p {
+  font-size: 17px;
+  color: white;
+}
+#containerBody .row2 .Subrow3 .sub article {
+  width: 2px;
+  height: 100px;
+  background: #f6e100;
+}
+
+@media (max-width: 575.98px) {
+  #containerBody .Subrow3 .sub {
+    flex-direction: column;
+  }
+  #containerBody .Subrow3 .sub .divp1 {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  #containerBody .Subrow3 .sub .divp2 {
+    max-width: 100%;
+  }
+  #containerBody .Subrow3 .sub article {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #containerBody .Subrow3 .sub {
+    flex-direction: column;
+  }
+  #containerBody .Subrow3 .sub .divp1 {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  #containerBody .Subrow3 .sub .divp2 {
+    max-width: 100%;
+  }
+  #containerBody .Subrow3 .sub article {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=sobre.css.map */
