@@ -1,0 +1,78 @@
+/***********CORES**********/
+#containerBody {
+  /*LIINHA 1
+  ******************************************************/
+}
+#containerBody .contateRow1 {
+  width: 100%;
+  padding: 50px 0 250px 0;
+  background: #f2f2f2;
+}
+#containerBody .contateRow1 .subRow {
+  width: 80%;
+  max-width: 1120px;
+  margin: 0 auto;
+  border: solid 2px red;
+  display: grid;
+  grid-template-columns: 2fr 1.6fr;
+}
+#containerBody .contateRow1 .subRow .col1 form {
+  padding: 50px;
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  position: relative;
+}
+#containerBody .contateRow1 .subRow .col1 form h2 {
+  font-size: 3.3rem;
+  color: #f6e100;
+  margin-bottom: 25px;
+}
+#containerBody .contateRow1 .subRow .col1 form p {
+  font-size: 1.1rem;
+  color: #909090;
+  margin-bottom: 25px;
+}
+#containerBody .contateRow1 .subRow .col1 form .formulario .formInput {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+#containerBody .contateRow1 .subRow .col1 form .formulario .formInput input {
+  height: 47px;
+  background: #f4f4f4;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 0 0 0 15px;
+}
+#containerBody .contateRow1 .subRow .col1 form .formulario .formInput input::placeholder {
+  color: #bfbfbf;
+  font-size: 1rem;
+}
+#containerBody .contateRow1 .subRow .col1 form .formulario .formInput .spacTotal {
+  grid-column: span 2;
+  min-height: 96px;
+}
+#containerBody .contateRow1 .subRow .col1 form .formulario .forBtn button {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  background: #f6e100;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+#containerBody .contateRow1 .subRow .col1 form .nomeInvisible {
+  position: absolute;
+  bottom: 10px;
+}
+#containerBody .contateRow1 .subRow .col2 {
+  background: burlywood;
+}
+
+/*# sourceMappingURL=contato.css.map */

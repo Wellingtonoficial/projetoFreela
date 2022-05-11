@@ -109,12 +109,26 @@ header{
                         color: $corMenu;
                         font-size: 15px;
                         text-decoration: none;
-                        &:hover{
-                            color: #735ee7;
-                            border-bottom: solid 2px #735ee7;
-                        }
+                        position: relative;
                     }
+                    a::after{
+                        content: " ";
+                        width: 0px;
+                        height: 3px;
+                        display: block;
+                        background: #735ee7;
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        bottom: 0;
+                        transition: width 0.5s;
+                    }
+                    a:hover::after{
+                        width: 100%;
+                    }
+                    
                 }
+
             }
             .ulStyle{
                 background: $lilazPadrao;
@@ -238,6 +252,10 @@ header{
                             &:hover{
                                 color: white;
                             }
+                        }
+                        a::after{
+                            content: " ";
+                            display: none;
                         }
                     }
                 }

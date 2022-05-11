@@ -1,0 +1,90 @@
+
+/***********CORES**********/
+$corMenu: #2d2d2d;
+$amarelo: #f6e100;
+$branco: white;
+
+
+#containerBody{
+
+    /*LIINHA 1
+    ******************************************************/
+    .contateRow1{
+        width: 100%;
+        padding: 50px 0  250px 0;
+        background: rgb(242, 242, 242);
+        .subRow{
+            width: 80%;
+            max-width: 1120px;
+            margin: 0 auto;
+            border: solid 2px red;
+            display: grid;
+            grid-template-columns: 2fr 1.6fr;
+            .col1{
+                form{
+                    padding: 50px;
+                    width: 100%;
+                    max-width: 600px;
+                    background: $branco;
+                    position: relative;
+                    h2{
+                        font-size: 3.3rem;
+                        color: $amarelo;
+                        margin-bottom: 25px;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                        color: #909090;;
+                        margin-bottom: 25px;
+                    }
+
+                    .formulario{
+                        .formInput{
+                            display: grid;
+                            grid-template-columns: repeat( 2, 1fr);
+                            grid-gap: 10px;
+                            margin-bottom: 10px;
+                            input{
+                                height: 47px;
+                                background: #f4f4f4;
+                                border: none;
+                                outline: none;
+                                border-radius: 4px;
+                                padding: 0 0 0 15px;
+                                &::placeholder{
+                                    color: #bfbfbf;
+                                    font-size: 1rem;
+                                }
+                            }
+                            .spacTotal{
+                                grid-column: span 2;
+                                min-height: 96px;
+                            }
+                        }
+                        .forBtn{
+                            button{
+                                width: 100%;
+                                height: 40px;
+                                border-radius: 4px;
+                                background: $amarelo;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                font-size: 15px;
+                                font-weight: bold;
+                                color: $branco;
+                            }
+                        }
+                    }
+                    .nomeInvisible{
+                        position: absolute;
+                        bottom: 10px;
+                    }
+                }
+            }
+            .col2{
+                background: burlywood;
+            }
+        }
+    }
+}

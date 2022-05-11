@@ -16,12 +16,14 @@ header .caixaInfo article p {
   **************************************/
   /*LINHA 2
   **************************************/
+  /*LINHA 3
+  **************************************/
 }
 #containerBody .PT_row1 {
   padding: 50px 0;
 }
 #containerBody .PT_row1 .subRow {
-  width: 100%;
+  width: 80%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -62,7 +64,7 @@ header .caixaInfo article p {
   object-fit: cover;
 }
 #containerBody .PT_row1 .subRo2 {
-  width: 100%;
+  width: 80%;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -111,7 +113,7 @@ header .caixaInfo article p {
   background: #6ED0E4;
 }
 #containerBody .PT_row2 .subRow {
-  width: 100%;
+  width: 80%;
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
@@ -143,6 +145,51 @@ header .caixaInfo article p {
 #containerBody .PT_row2 .subRow .col2 article p {
   font-size: 17px;
   color: #ececec;
+}
+#containerBody .PT_row3 {
+  width: 100%;
+  padding: 100px 0;
+  background: #e83e8c;
+}
+#containerBody .PT_row3 .subRow {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#containerBody .PT_row3 .subRow div {
+  text-align: center;
+}
+#containerBody .PT_row3 .subRow div h1 {
+  padding: 0 0 30px 0;
+  font-size: 40px;
+  color: white;
+}
+#containerBody .PT_row3 .subRow .btns {
+  display: flex;
+  justify-content: center;
+}
+#containerBody .PT_row3 .subRow .btns span {
+  margin: 0 15px;
+}
+#containerBody .PT_row3 .subRow .btns span a {
+  color: white;
+  width: 203px;
+  height: 43px;
+  border-radius: 18px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: solid 1px white;
+  gap: 7px;
+}
+#containerBody .PT_row3 .subRow .btns span a:hover {
+  background: white;
+  color: #e83e8c;
+  transition: 0.2s ease-in;
+}
+#containerBody .rowRodape {
+  padding: 70px 0 50px 0;
 }
 
 @media (max-width: 575.98px) {

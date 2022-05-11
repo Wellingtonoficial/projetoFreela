@@ -106,10 +106,22 @@ header nav .menu .menuUl li a {
   color: #2d2d2d;
   font-size: 15px;
   text-decoration: none;
+  position: relative;
 }
-header nav .menu .menuUl li a:hover {
-  color: #735ee7;
-  border-bottom: solid 2px #735ee7;
+header nav .menu .menuUl li a::after {
+  content: " ";
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: #735ee7;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.5s;
+}
+header nav .menu .menuUl li a:hover::after {
+  width: 100%;
 }
 header nav .menu .ulStyle {
   background: #f6e100;
@@ -230,6 +242,10 @@ header .caixaInfo article span:hover > a {
   }
   header nav .menu .menuUl li a:hover {
     color: white;
+  }
+  header nav .menu .menuUl li a::after {
+    content: " ";
+    display: none;
   }
   header nav .menu .ulStyle {
     display: none;
