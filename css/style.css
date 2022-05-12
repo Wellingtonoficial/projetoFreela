@@ -495,6 +495,7 @@ header .caixaInfo article span:hover > a {
   justify-content: center;
 }
 #containerBody .row4 .subRow .subRow3 img {
+  width: 100%;
   max-width: 1100px;
 }
 #containerBody .row4 .subRow .subRow4 {
@@ -625,19 +626,6 @@ header .caixaInfo article span:hover > a {
   color: #474747;
   font-weight: 600;
 }
-#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado p #writing::after {
-  content: "|";
-  margin-left: 5px;
-  animation: blink 0.7s infinite;
-}
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 #containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a {
   outline: solid 1px white;
   color: white;
@@ -730,6 +718,34 @@ header .caixaInfo article span:hover > a {
 #containerBody .rowRodape .subRow .subSubRow3 .copy p {
   color: #a7a5a5;
   font-size: 16px;
+}
+
+#textDigit::after, #textDigit2::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+[data-anime] {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+[data-anime=top] {
+  transform: translate3d(0, 150px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
 }
 
 @media (max-width: 575.98px) {
@@ -963,7 +979,7 @@ header .caixaInfo article span:hover > a {
     padding: 50px 0 165px 0;
   }
   #containerBody .row2 .Subrow2 {
-    width: 80%;
+    width: 95%;
   }
   #containerBody .row2 .Subrow2 .row2_col1 {
     width: 100%;
@@ -1020,22 +1036,6 @@ header .caixaInfo article span:hover > a {
   }
   #containerBody .rowRodape .subRow {
     width: 95%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /*LIINHA 3
-  ******************************************************/
-  #containerBody .row3 .subRow1 {
-    width: 90%;
-  }
-  #containerBody .row3 .subRow2 {
-    width: 90%;
-  }
-  #containerBody .row3 .subRow2 .col1, #containerBody .row3 .subRow2 .col2, #containerBody .row3 .subRow2 .col3 {
-    width: 100%;
-  }
-  #containerBody .row3 .subRow2 .col1 article, #containerBody .row3 .subRow2 .col2 article, #containerBody .row3 .subRow2 .col3 article {
-    text-align: center;
   }
 }
 

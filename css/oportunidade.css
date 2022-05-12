@@ -152,6 +152,7 @@ header .caixaInfo article span a {
   padding: 50px 0 200px 0;
 }
 #containerBody .row6 .subRow6 {
+  width: 80%;
   max-width: 740px;
   margin: 0 auto;
   position: relative;
@@ -289,6 +290,8 @@ header .caixaInfo article span a {
   #containerBody {
     /*LINHA 5
     ******************************************************/
+    /*LINHA 6
+    ******************************************************/
   }
   #containerBody .row5 .subRow1 {
     width: 95%;
@@ -303,12 +306,34 @@ header .caixaInfo article span a {
     max-width: 100%;
     padding: 15px 15px;
     position: static;
+  }
+  #containerBody .row5 .Subrow3 .sub {
+    width: 95%;
+    flex-direction: column;
+  }
+  #containerBody .row5 .Subrow3 .sub .divp1 {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  #containerBody .row5 .Subrow3 .sub .divp2 {
+    max-width: 100%;
+  }
+  #containerBody .row5 .Subrow3 .sub article {
+    display: none;
+  }
+  #containerBody .row6 {
+    width: 100%;
+  }
+  #containerBody .row6 .subRow6 {
+    width: 95%;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   #containerBody {
     /*LINHA 5
     ******************************************************/
+    /*LINHA 6
+    ******************************************************/
   }
   #containerBody .row5 .subRow1 {
     width: 95%;
@@ -322,15 +347,51 @@ header .caixaInfo article span a {
     padding: 15px 15px;
     position: static;
   }
+  #containerBody .row5 .Subrow3 .sub {
+    width: 95%;
+    flex-direction: column;
+  }
+  #containerBody .row5 .Subrow3 .sub .divp1 {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  #containerBody .row5 .Subrow3 .sub .divp2 {
+    max-width: 100%;
+  }
+  #containerBody .row5 .Subrow3 .sub article {
+    display: none;
+  }
+  #containerBody .row6 {
+    width: 100%;
+  }
+  #containerBody .row6 .subRow6 {
+    width: 95%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   #containerBody {
+    /*LIINHA 2
+    ******************************************************/
     /*LINHA 5
     ******************************************************/
+    /*LINHA 6
+    ******************************************************/
+  }
+  #containerBody .row2 .Subrow2 {
+    width: 95%;
+  }
+  #containerBody .row5 .subRow1 {
+    width: 95%;
   }
   #containerBody .row5 .subRow1 .row1_col2 {
     max-width: 400px;
     padding: 15px 45px 100px 45px;
+  }
+  #containerBody .row5 .Subrow3 .sub {
+    width: 95%;
+  }
+  #containerBody .row6 .subRow6 {
+    width: 95%;
   }
 }
 

@@ -71,32 +71,40 @@ header .caixaInfo article h1::after {
 }
 
 @media (max-width: 575.98px) {
-  #containerBody .Subrow3 .sub {
+  #containerBody .row2 .Subrow2 .row2_col1 {
+    padding: 20px 0;
+  }
+  #containerBody .row2 .Subrow3 .sub {
+    width: 95%;
     flex-direction: column;
   }
-  #containerBody .Subrow3 .sub .divp1 {
+  #containerBody .row2 .Subrow3 .sub .divp1 {
     max-width: 100%;
     margin-bottom: 25px;
   }
-  #containerBody .Subrow3 .sub .divp2 {
+  #containerBody .row2 .Subrow3 .sub .divp2 {
     max-width: 100%;
   }
-  #containerBody .Subrow3 .sub article {
+  #containerBody .row2 .Subrow3 .sub article {
     display: none;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #containerBody .Subrow3 .sub {
+  #containerBody .row2 .Subrow2 .row2_col1 {
+    padding: 20px 0;
+  }
+  #containerBody .row2 .Subrow3 .sub {
+    width: 95%;
     flex-direction: column;
   }
-  #containerBody .Subrow3 .sub .divp1 {
+  #containerBody .row2 .Subrow3 .sub .divp1 {
     max-width: 100%;
     margin-bottom: 25px;
   }
-  #containerBody .Subrow3 .sub .divp2 {
+  #containerBody .row2 .Subrow3 .sub .divp2 {
     max-width: 100%;
   }
-  #containerBody .Subrow3 .sub article {
+  #containerBody .row2 .Subrow3 .sub article {
     display: none;
   }
 }

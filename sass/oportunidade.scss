@@ -126,6 +126,7 @@ header{
         width: 100%;
         padding: 50px 0 200px 0;
         .subRow6{
+            width: 80%;
             max-width: 740px;
             margin: 0 auto;
             position: relative;
@@ -268,18 +269,6 @@ header{
         }
     }
 
-    // .row7{
-    //     padding: 50px 0  250px 0;
-    //     width: 100%;
-    //     border: solid 2px red;
-    //     .subRow7{
-    //         width: 80%;
-    //         max-width: 1120px;
-    //         margin: 0 auto;
-    //         border: solid 2px rgb(51, 255, 0);
-    //     }
-    // }
-
 }
 
 
@@ -295,6 +284,24 @@ header{
                 .row1_col1{width: 100%; max-width: 100%; margin-bottom: 20px;}
                 .row1_col2{width: 100%; max-width: 100%; padding: 15px 15px; position: static;}
             }
+            .Subrow3{
+                .sub{width: 95%;
+                    flex-direction: column;
+                    .divp1{max-width: 100%; margin-bottom: 25px;}
+                    .divp2{max-width: 100%;}
+                    article{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+
+        /*LINHA 6
+        ******************************************************/
+        .row6{
+            width: 100%;
+            .subRow6{width: 95%;}
         }
     }
 
@@ -309,14 +316,45 @@ header{
                 .row1_col1{margin-bottom: 20px;}
                 .row1_col2{width: 100%; max-width: 100%; padding: 15px 15px; position: static;}
             }
+            .Subrow3{
+                .sub{width: 95%;
+                    flex-direction: column;
+                    .divp1{max-width: 100%; margin-bottom: 25px;}
+                    .divp2{max-width: 100%;}
+                    article{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        /*LINHA 6
+        ******************************************************/
+        .row6{
+            width: 100%;
+            .subRow6{width: 95%;}
         }
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
     #containerBody{
 
+        /*LIINHA 2
+        ******************************************************/
+        .row2{
+            .Subrow2{width: 95%;}
+        }
+
         /*LINHA 5
         ******************************************************/
-        .row5{.subRow1{.row1_col2{max-width: 400px; padding: 15px 45px 100px 45px;}}}
+        .row5{.subRow1{ width: 95%;.row1_col2{max-width: 400px; padding: 15px 45px 100px 45px;}}
+              .Subrow3{.sub{width: 95%;}}
+        }
+
+        /*LINHA 6
+        ******************************************************/
+        .row6{
+            .subRow6{width: 95%;}
+        }
     }
 }

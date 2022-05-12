@@ -238,13 +238,13 @@ header .caixaInfo article p {
     order: 5;
   }
   #containerBody .PT_row1 .subRo2 {
-    max-width: 95%;
+    width: 95%;
   }
   #containerBody .PT_row1 .subRo2 .carousel .slider {
     width: 400% !important;
   }
   #containerBody .PT_row2 .subRow {
-    max-width: 95%;
+    width: 95%;
     grid-template-columns: 1fr;
   }
   #containerBody .PT_row2 .subRow .col1 {
@@ -306,13 +306,13 @@ header .caixaInfo article p {
     order: 5;
   }
   #containerBody .PT_row1 .subRo2 {
-    max-width: 95%;
+    width: 95%;
   }
   #containerBody .PT_row1 .subRo2 .carousel .slider {
     width: 400% !important;
   }
   #containerBody .PT_row2 .subRow {
-    max-width: 95%;
+    width: 95%;
     grid-template-columns: 1fr;
   }
   #containerBody .PT_row2 .subRow .col1 {
@@ -326,6 +326,23 @@ header .caixaInfo article p {
   }
   #containerBody .PT_row2 .subRow .col2 article p {
     font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #containerBody {
+    /*LINHA 1
+    **************************************/
+    /*LINHA 2
+    **************************************/
+  }
+  #containerBody .PT_row1 .subRow {
+    width: 95%;
+  }
+  #containerBody .PT_row1 .subRo2 {
+    width: 95%;
+  }
+  #containerBody .PT_row2 .subRow {
+    width: 95%;
   }
 }
 

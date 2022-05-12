@@ -85,13 +85,21 @@ header{
 
 @media (max-width: 575.98px){
     #containerBody{
-        .Subrow3{
-            .sub{
-                flex-direction: column;
-                .divp1{max-width: 100%; margin-bottom: 25px;}
-                .divp2{max-width: 100%;}
-                article{
-                    display: none;
+        .row2{
+            .Subrow2{
+                .row2_col1{
+                    padding: 20px 0;
+                }
+            }
+
+            .Subrow3{
+                .sub{width: 95%;
+                    flex-direction: column;
+                    .divp1{max-width: 100%; margin-bottom: 25px;}
+                    .divp2{max-width: 100%;}
+                    article{
+                        display: none;
+                    }
                 }
             }
         }
@@ -100,13 +108,21 @@ header{
 }
 @media (min-width: 576px) and (max-width: 767.98px){
     #containerBody{
-        .Subrow3{
-            .sub{
-                flex-direction: column;
-                .divp1{max-width: 100%; margin-bottom: 25px;}
-                .divp2{max-width: 100%;}
-                article{
-                    display: none;
+        .row2{
+            .Subrow2{
+                .row2_col1{
+                    padding: 20px 0;
+                }
+            }
+
+            .Subrow3{
+                .sub{width: 95%;
+                    flex-direction: column;
+                    .divp1{max-width: 100%; margin-bottom: 25px;}
+                    .divp2{max-width: 100%;}
+                    article{
+                        display: none;
+                    }
                 }
             }
         }

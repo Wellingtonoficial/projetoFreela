@@ -12,13 +12,14 @@
   width: 80%;
   max-width: 1120px;
   margin: 0 auto;
-  border: solid 2px red;
   display: grid;
   grid-template-columns: 2fr 1.6fr;
+  grid-gap: 10px;
 }
 #containerBody .contateRow1 .subRow .col1 form {
   padding: 50px;
   width: 100%;
+  height: 100%;
   max-width: 600px;
   background: white;
   position: relative;
@@ -72,7 +73,100 @@
   bottom: 10px;
 }
 #containerBody .contateRow1 .subRow .col2 {
-  background: burlywood;
+  padding: 10px;
+  background: white;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article {
+  padding: 10px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article h3 {
+  font-size: 1.6rem;
+  color: #f6e100;
+  margin-bottom: 30px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .telefone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .telefone i {
+  font-size: 30px;
+  color: #B4B4B4;
+  margin-right: 25px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .telefone p {
+  color: #B4B4B4;
+  font-size: 15px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .email i {
+  font-size: 30px;
+  color: #B4B4B4;
+  margin-right: 25px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .email p {
+  color: #B4B4B4;
+  font-size: 15px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .localizacao {
+  display: flex;
+  justify-content: flex-start;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .localizacao i {
+  font-size: 30px;
+  color: #B4B4B4;
+  margin-right: 25px;
+}
+#containerBody .contateRow1 .subRow .col2 .subCol2 article .localizacao div p {
+  color: #B4B4B4;
+  font-size: 15px;
+}
+
+@media (max-width: 575.98px) {
+  #containerBody .contateRow1 .subRow {
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+  #containerBody .contateRow1 .subRow .col1 form {
+    max-width: 100%;
+  }
+  #containerBody .contateRow1 .subRow .col1 form .formulario .formInput {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  #containerBody .contateRow1 .subRow .col1 form .formulario .formInput .spacTotal {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #containerBody .contateRow1 .subRow {
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+  #containerBody .contateRow1 .subRow .col1 form {
+    max-width: 100%;
+  }
+  #containerBody .contateRow1 .subRow .col1 form .formulario .formInput {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  #containerBody .contateRow1 .subRow .col1 form .formulario .formInput .spacTotal {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #containerBody .contateRow1 .subRow {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=contato.css.map */
