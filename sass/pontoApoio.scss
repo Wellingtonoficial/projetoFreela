@@ -2,7 +2,11 @@
 
 /***********CORES**********/
 $corMenu: #2d2d2d;
-$lilazPadrao: #f6e100;
+$amarelo: #f6e100;
+$branco: white;
+$cinzaClaro:#B4B4B4;
+$azulMarinho: #6ED0E4;
+$rosa: #e83e8c;
 
 header{
     .caixaInfo{
@@ -13,7 +17,7 @@ header{
             }
             p{
                 font-size: 17px;
-                color: white;
+                color: $branco;
                 text-align: justify;
             }
         }
@@ -123,7 +127,7 @@ header{
     **************************************/
     .PT_row2{
         padding: 100px 0;
-        background: #6ED0E4;
+        background: $azulMarinho;
         .subRow{
             width: 80%;
             max-width: 1280px;
@@ -147,12 +151,12 @@ header{
                 article{
                     svg{
                         width: 70px;
-                        fill: white;
+                        fill: $branco;
                         margin-bottom: 25px;
                     }
                     h2{
                         font-size: 40px;
-                        color: white;
+                        color: $branco;
                         margin-bottom: 25px;
                     }
                     p{
@@ -170,7 +174,7 @@ header{
     .PT_row3{
         width: 100%;
         padding: 100px 0;
-        background: #e83e8c;
+        background: $rosa;
         .subRow{
             width: 80%;
             max-width: 1280px;
@@ -180,7 +184,7 @@ header{
                 h1{
                     padding: 0 0 30px 0;
                     font-size: 40px;
-                    color: white;
+                    color: $branco;
                 }
             }
             .btns{
@@ -189,7 +193,7 @@ header{
                 span{
                     margin: 0 15px;
                     a{
-                        color: white;
+                        color: $branco;
                         width: 203px;
                         height: 43px;
                         border-radius: 18px;
@@ -197,12 +201,12 @@ header{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        outline: solid 1px white;
+                        outline: solid 1px $branco;
                         gap: 7px;
                         }
                         a:hover{
-                            background: white;
-                            color: #e83e8c;
+                            background: $branco;
+                            color: $rosa;
                             transition: .2s ease-in;
                         }
                     }
@@ -211,9 +215,9 @@ header{
         }
 
 
-        .rowRodape{
-            padding: 70px 0 50px 0;
-        }
+    .rowRodape{
+        padding: 70px 0 50px 0;
+    }
 }
 
 
@@ -261,6 +265,14 @@ header{
                 }
             }
         }
+
+        /*LINHA 3
+        **************************************/
+        .PT_row3{
+            .subRow{width: 95%;
+            .btns{span{a{width: 180px;}}}}
+        }
+
     }
 
 }

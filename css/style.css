@@ -123,37 +123,30 @@ header nav .menu .menuUl li a::after {
 header nav .menu .menuUl li a:hover::after {
   width: 100%;
 }
-header nav .menu .ulStyle {
+header nav .menu .ulStyle a {
   background: #f6e100;
+  color: white;
   padding: 10px 20px;
   border-radius: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  cursor: pointer;
-}
-header nav .menu .ulStyle li {
-  margin-right: 10px;
-}
-header nav .menu .ulStyle li a {
   text-decoration: none;
-  color: white;
+  gap: 7px;
 }
-header nav .menu .ulStyle:hover {
+header nav .menu .ulStyle a svg {
+  width: 15px;
+  fill: white;
+}
+header nav .menu .ulStyle a:hover {
   background: white;
   outline: solid 1px #f6e100;
   color: #f6e100;
   transition: 0.2s ease-in;
 }
-header nav .menu .ulStyle:hover > svg, header nav .menu .ulStyle:hover > li a {
+header nav .menu .ulStyle a:hover > svg {
   fill: #f6e100;
-  color: #f6e100;
   transition: 0.2s ease-in;
-}
-header nav .menu svg {
-  width: 15px;
-  fill: white;
 }
 header .menuFixado {
   position: fixed;
@@ -296,19 +289,19 @@ header .caixaInfo article span:hover > a {
 #containerBody .row2 .Subrow2 .row2_col1 article h2 {
   font-size: 33px;
   margin-bottom: 10px;
-  color: #3a3838;
+  color: #7a7a7a;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .nomeTeclando {
   margin-bottom: 30px;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .nomeTeclando h3 {
   font-size: 33px;
-  color: #3a3838;
+  color: #7a7a7a;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article p {
   font-size: 17px;
   margin-bottom: 40px;
-  color: #2d2d2d;
+  color: #5a5757;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article p span {
   font-weight: 800;
@@ -441,18 +434,10 @@ header .caixaInfo article span:hover > a {
   gap: 7px;
   margin: 0 auto;
 }
-#containerBody .row3 .subRow2 .col1 article .btnRow3 a svg, #containerBody .row3 .subRow2 .col2 article .btnRow3 a svg, #containerBody .row3 .subRow2 .col3 article .btnRow3 a svg {
-  width: 15px;
-  fill: white;
-}
 #containerBody .row3 .subRow2 .col1 article .btnRow3 a:hover, #containerBody .row3 .subRow2 .col2 article .btnRow3 a:hover, #containerBody .row3 .subRow2 .col3 article .btnRow3 a:hover {
   background: white;
   outline: solid 1px #f6e100;
   color: #f6e100;
-  transition: 0.2s ease-in;
-}
-#containerBody .row3 .subRow2 .col1 article .btnRow3 a:hover > span svg, #containerBody .row3 .subRow2 .col2 article .btnRow3 a:hover > span svg, #containerBody .row3 .subRow2 .col3 article .btnRow3 a:hover > span svg {
-  fill: #f6e100 !important;
   transition: 0.2s ease-in;
 }
 #containerBody .row4 {
@@ -564,18 +549,10 @@ header .caixaInfo article span:hover > a {
   align-items: center;
   gap: 7px;
 }
-#containerBody .row5 .subRow1 .col1 article .btnRow5 a svg {
-  width: 15px;
-  fill: white;
-}
 #containerBody .row5 .subRow1 .col1 article .btnRow5 a:hover {
   background: white;
   outline: solid 1px #f6e100;
   color: #f6e100;
-  transition: 0.2s ease-in;
-}
-#containerBody .row5 .subRow1 .col1 article .btnRow5 a:hover > span svg {
-  fill: #f6e100 !important;
   transition: 0.2s ease-in;
 }
 #containerBody .row5 .subRow1 .col2 {

@@ -211,6 +211,8 @@ header .caixaInfo article p {
     **************************************/
     /*LINHA 2
     **************************************/
+    /*LINHA 3
+    **************************************/
   }
   #containerBody .PT_row1 .subRow {
     width: 95%;
@@ -258,6 +260,12 @@ header .caixaInfo article p {
   }
   #containerBody .PT_row2 .subRow .col2 article p {
     font-size: 1rem;
+  }
+  #containerBody .PT_row3 .subRow {
+    width: 95%;
+  }
+  #containerBody .PT_row3 .subRow .btns span a {
+    width: 180px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {

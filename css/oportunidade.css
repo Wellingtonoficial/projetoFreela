@@ -114,7 +114,7 @@ header .caixaInfo article span a {
   transition: 0.2s ease-in;
 }
 #containerBody .row5 .Subrow3 {
-  background: #2aa3f5;
+  background: #6ED0E4;
   padding: 20px 0;
 }
 #containerBody .row5 .Subrow3 .sub {
@@ -222,7 +222,7 @@ header .caixaInfo article span a {
 }
 #containerBody .row6 .subRow6 .subRow6_row2 .carousel .control .arrow i svg {
   width: 10px;
-  fill: #9e9d9dd3;
+  fill: #B4B4B4;
 }
 #containerBody .row6 .subRow6 .subRow6_row2 .carousel .control .left {
   left: 10px;
@@ -266,24 +266,6 @@ header .caixaInfo article span a {
   height: 10px;
   border-radius: 50%;
   background: #f6e100;
-}
-#containerBody .row6 .subRow6 #setaEsquerda {
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-#containerBody .row6 .subRow6 #setaEsquerda svg {
-  width: 10px;
-  fill: #9e9d9dd3;
-}
-#containerBody .row6 .subRow6 #setaDireita {
-  position: absolute;
-  top: 50%;
-  right: 0;
-}
-#containerBody .row6 .subRow6 #setaDireita svg {
-  width: 10px;
-  fill: #9e9d9dd3;
 }
 
 @media (max-width: 575.98px) {
