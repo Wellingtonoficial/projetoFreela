@@ -45,6 +45,45 @@ header .caixaInfo article span a {
   width: 100px;
   fill: #e5e5e5;
 }
+#containerBody .row2 .Subrow2 .row2_col2 .videoMakeFundo {
+  display: none;
+  background: rgba(0, 0, 0, 0.607);
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+}
+#containerBody .row2 .Subrow2 .row2_col2 .videoMakeFundo .btnExcluir {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+}
+#containerBody .row2 .Subrow2 .row2_col2 .videoMakeFundo .btnExcluir i {
+  font-size: 27px;
+  color: white;
+  cursor: pointer;
+}
+#containerBody .row2 .Subrow2 .row2_col2 .videoMakeFundo .videoMake {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  width: 70vw;
+  max-width: 1100px;
+}
+#containerBody .row2 .Subrow2 .row2_col2 .videoMakeFundo .videoMake video {
+  width: 100%;
+}
+#containerBody .row2 .Subrow2 .row2_col2 .vidmakeActiv {
+  display: block;
+}
 #containerBody .row5 {
   padding: 50px 0;
 }
@@ -89,11 +128,12 @@ header .caixaInfo article span a {
 #containerBody .row5 .subRow1 .row1_col2 article h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  color: #7a7a7a;
 }
 #containerBody .row5 .subRow1 .row1_col2 article p {
   font-size: 17px;
   margin-bottom: 40px;
-  color: #2d2d2d;
+  color: #7a7a7a;
 }
 #containerBody .row5 .subRow1 .row1_col2 article .btnRow2 a {
   background: #f6e100;
@@ -114,7 +154,7 @@ header .caixaInfo article span a {
   transition: 0.2s ease-in;
 }
 #containerBody .row5 .Subrow3 {
-  background: #6ED0E4;
+  background: #2aa3f5;
   padding: 20px 0;
 }
 #containerBody .row5 .Subrow3 .sub {

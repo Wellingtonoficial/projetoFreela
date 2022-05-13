@@ -39,6 +39,45 @@ header{
                 .subDiv{width: 100%; height: 480px; background-image: url('../img/imgFundo2.jpg');
                     div{svg{width: 100px; fill: rgb(229, 229, 229);}}
                 }
+                .videoMakeFundo{
+                    display: none;
+                    background: rgba(0, 0, 0, 0.607);
+                    position: relative;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1000;
+                    width: 100%;
+                    height: 100vh;
+                    .btnExcluir{
+                        position: absolute;
+                        top: 30px;
+                        right: 60px;
+                        i{
+                            font-size: 27px;
+                            color: $branco;
+                            cursor: pointer;
+                        }
+                    }
+                    .videoMake{
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        margin-right: -50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 1001;
+                        width: 70vw;
+                        max-width: 1100px;
+                        video{
+                            width: 100%;
+                        }
+                    }
+                }
+                .vidmakeActiv{
+                    display: block;
+                }
             }
         }
     }
@@ -84,8 +123,8 @@ header{
                 right: 0;
                 article{
                     padding: 7px 0;
-                    h2{ font-size: 40px; margin-bottom: 30px;}
-                    p{font-size: 17px; margin-bottom: 40px; color: #2d2d2d;}
+                    h2{ font-size: 40px; margin-bottom: 30px; color: $cinzaClaro2;}
+                    p{font-size: 17px; margin-bottom: 40px; color: $cinzaClaro2;}
                     .btnRow2{
                         a{
                         background: $amarelo;
@@ -109,7 +148,7 @@ header{
                 }
             }
         }
-        .Subrow3{background: $azulMarinho; padding: 20px 0;
+        .Subrow3{background: #2aa3f5; padding: 20px 0;
             .sub{width: 80%; max-width: 1120px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;
                 .divp1{max-width: 230px;
                     p{font-size: 3rem;color: $branco;

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: poppins,Sans-serif;
+    font-family: "Proxima Nova",-apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    position: relative;
 }
 
 /***********CORES**********/
@@ -316,7 +317,7 @@ header{
                         margin-bottom: 40px;
                         color: #5a5757;
                         span{
-                            font-weight: 800;
+                            font-weight: bold;
                         }
                     }
                     .btnRow2{
@@ -372,6 +373,47 @@ header{
                     }
                 }
             }
+
+            .videoMakeFundo{
+                display: none;
+                background: rgba(0, 0, 0, 0.607);
+                position: relative;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                z-index: 1000;
+                width: 100%;
+                height: 100vh;
+                .btnExcluir{
+                    position: absolute;
+                    top: 30px;
+                    right: 60px;
+                    i{
+                        font-size: 27px;
+                        color: $branco;
+                        cursor: pointer;
+                    }
+                }
+                .videoMake{
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1001;
+                    width: 70vw;
+                    max-width: 1100px;
+                    video{
+                        width: 100%;
+                    }
+                }
+            }
+            .vidmakeActiv{
+                display: block;
+            }
+            
         }
     }
 
@@ -546,8 +588,9 @@ header{
             max-width: 1120px;
             margin: 0 auto;
             display: flex;
+            justify-content: space-between;
             .col1{
-                width: 40%;
+                width: 60%;
                 max-width: 530px;
                 article{
                     width: 70%;
@@ -590,15 +633,16 @@ header{
                 }
             }
             .col2{
-                width: 60%;
+                width: 40%;
                 div{
                     width: 100%;
                     height: 400px;
                     display: flex;
                     justify-content: flex-end;
                     img{
-                        margin-top: -78px;
-                        width: 598px;
+                        width: 100%;
+                        height: 100%;
+                       object-fit: cover;
                     }
                 }
             }
@@ -832,7 +876,6 @@ header{
                 }
                 .col2{width: 100%; order: 1; margin-bottom: 25px;
                     div{width: 100%; height: 500px;
-                        img{margin-top: 0; width: 100%;}
                     }
                 }
             }
@@ -843,7 +886,9 @@ header{
     ******************************************************/
     #containerBody{
         .rowRodape{
-            .subRowGeral1{width: 100%; border-radius: 90px 0 0 0;}
+            .subRowGeral1{width: 100%; border-radius: 90px 0 0 0;
+            .divTexDigitalizado{ width: 90%; margin: 0 auto; padding: 15px 0;}
+            }
             .subRow{width: 95%;
                 .subSubRow1{
                     .divRedesSociais{
@@ -911,7 +956,7 @@ header{
                     article{width: 100%;max-width: 530px;}
                 }
                 .col2{ width: 100%; order: 1; margin-bottom: 25px;
-                    div{ width: 100%; height: 500px;img{margin-top: 0;width: 100%;}}
+                    div{ width: 100%; height: 600px;}
                 }
             }
         }
@@ -972,7 +1017,7 @@ header{
                     article{width: 70%;}
                 }
                 .col2{width: 55%;
-                    div{width: 100%;height: 300px;img{margin-top: -78px; width: 100%;}}
+                    div{width: 100%;}
                 }
             }
         }
