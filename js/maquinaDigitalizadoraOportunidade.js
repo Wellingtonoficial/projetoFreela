@@ -1,7 +1,7 @@
 
 
 const textDigit = document.getElementById('textDigit')
-const phrases = [' de ganhar dinheiro', 'de transformar vidas', 'de realizar seus sonhos']
+const phrasesF = [' de ganhar dinheiro', 'de transformar vidas', 'de realizar seus sonhos']
 let ind = 0
 let jp = 0 
 let currentPhraseF = []
@@ -12,21 +12,21 @@ function looppp () {
   isEndF = false
   textDigit.innerHTML = currentPhraseF.join('')
 
-  if (ind < phrases.length) {
+  if (ind < phrasesF.length) {
 
-    if (!isDeletingF && jp <= phrases[ind].length) {
-      currentPhraseF.push(phrases[ind][jp])
+    if (!isDeletingF && jp <= phrasesF[ind].length) {
+      currentPhraseF.push(phrasesF[ind][jp])
       jp++
       textDigit.innerHTML = currentPhraseF.join('')
     }
 
-    if(isDeletingF && jp <= phrases[ind].length) {
-      currentPhraseF.pop(phrases[ind][jp])
+    if(isDeletingF && jp <= phrasesF[ind].length) {
+      currentPhraseF.pop(phrasesF[ind][jp])
       jp--
       textDigit.innerHTML = currentPhraseF.join('')
     }
 
-    if (jp == phrases[ind].length) {
+    if (jp == phrasesF[ind].length) {
       isEndF = true
       isDeletingF = true
     }
@@ -35,7 +35,7 @@ function looppp () {
       currentPhraseF = []
       isDeletingF = false
       ind++
-      if (ind === phrases.length) {
+      if (ind === phrasesF.length) {
         ind = 0
       }
     }

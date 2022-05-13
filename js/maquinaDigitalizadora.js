@@ -1,49 +1,49 @@
 
 
 const texDig_home1 = document.getElementById('texDig_home1')
-const phrases = ['realizar sonhos', 'ganhar dinheiro', 'se desenvolver', 'ter liberdade']
-let i = 0
-let j = 0 
-let currentPhrase = []
-let isDeleting = false
-let isEnd = false
+const phrasesP = ['realizar sonhos', 'ganhar dinheiro', 'se desenvolver', 'ter liberdade']
+let ip = 0
+let jt = 0 
+let currentPhraseP = []
+let isDeletingP = false
+let isEndP = false
 
-function loop () {
-  isEnd = false
-  texDig_home1.innerHTML = currentPhrase.join('')
+function loop3 () {
+  isEndP = false
+  texDig_home1.innerHTML = currentPhraseP.join('')
 
-  if (i < phrases.length) {
+  if (ip < phrasesP.length) {
 
-    if (!isDeleting && j <= phrases[i].length) {
-      currentPhrase.push(phrases[i][j])
-      j++
-      texDig_home1.innerHTML = currentPhrase.join('')
+    if (!isDeletingP && jt <= phrasesP[ip].length) {
+      currentPhraseP.push(phrasesP[ip][jt])
+      jt++
+      texDig_home1.innerHTML = currentPhraseP.join('')
     }
 
-    if(isDeleting && j <= phrases[i].length) {
-      currentPhrase.pop(phrases[i][j])
-      j--
-      texDig_home1.innerHTML = currentPhrase.join('')
+    if(isDeletingP && jt <= phrasesP[ip].length) {
+      currentPhraseP.pop(phrasesP[ip][jt])
+      jt--
+      texDig_home1.innerHTML = currentPhraseP.join('')
     }
 
-    if (j == phrases[i].length) {
-      isEnd = true
-      isDeleting = true
+    if (jt == phrasesP[ip].length) {
+      isEndP = true
+      isDeletingP = true
     }
 
-    if (isDeleting && j === 0) {
-      currentPhrase = []
-      isDeleting = false
-      i++
-      if (i === phrases.length) {
-        i = 0
+    if (isDeletingP && jt === 0) {
+      currentPhraseP = []
+      isDeletingP = false
+      ip++
+      if (ip === phrasesP.length) {
+        ip = 0
       }
     }
   }
   const spedUp = Math.random() * (80 -50) + 50
   const normalSpeed = Math.random() * (300 -200) + 30
-  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed
-  setTimeout(loop, time)
+  const time = isEndP ? 2000 : isDeletingP ? spedUp : normalSpeed
+  setTimeout(loop3, time)
 }
 
-loop()
+loop3()
