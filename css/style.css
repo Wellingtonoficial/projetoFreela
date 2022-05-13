@@ -134,10 +134,11 @@ header nav .menu .ulStyle a {
   align-items: center;
   text-decoration: none;
   gap: 7px;
+  font-size: 1rem;
 }
-header nav .menu .ulStyle a svg {
-  width: 15px;
-  fill: white;
+header nav .menu .ulStyle a i {
+  font-size: 1.4rem;
+  color: white;
 }
 header nav .menu .ulStyle a:hover {
   background: white;
@@ -145,8 +146,8 @@ header nav .menu .ulStyle a:hover {
   color: #f6e100;
   transition: 0.2s ease-in;
 }
-header nav .menu .ulStyle a:hover > svg {
-  fill: #f6e100;
+header nav .menu .ulStyle a:hover > i {
+  color: #f6e100;
   transition: 0.2s ease-in;
 }
 header .menuFixado {
@@ -293,11 +294,12 @@ header .caixaInfo article span:hover > a {
   color: #7a7a7a;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .nomeTeclando {
+  min-height: 60px;
   margin-bottom: 30px;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .nomeTeclando h3 {
   font-size: 33px;
-  color: #7a7a7a;
+  color: #f6e100;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article p {
   font-size: 17px;
@@ -310,8 +312,9 @@ header .caixaInfo article span:hover > a {
 #containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a {
   background: #f6e100;
   color: white;
-  width: 203px;
-  height: 43px;
+  font-size: 1rem;
+  max-width: 200px;
+  padding: 10px 20px;
   border-radius: 18px;
   text-decoration: none;
   display: flex;
@@ -319,9 +322,9 @@ header .caixaInfo article span:hover > a {
   align-items: center;
   gap: 7px;
 }
-#containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a svg {
-  width: 15px;
-  fill: white;
+#containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a i {
+  font-size: 1.4rem;
+  color: white;
 }
 #containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a:hover {
   background: white;
@@ -329,8 +332,8 @@ header .caixaInfo article span:hover > a {
   color: #f6e100;
   transition: 0.2s ease-in;
 }
-#containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a:hover > span svg {
-  fill: #f6e100 !important;
+#containerBody .row2 .Subrow2 .row2_col1 article .btnRow2 a:hover > i {
+  color: #f6e100 !important;
   transition: 0.2s ease-in;
 }
 #containerBody .row2 .Subrow2 .row2_col2 {
@@ -350,9 +353,9 @@ header .caixaInfo article span:hover > a {
   align-items: center;
   cursor: pointer;
 }
-#containerBody .row2 .Subrow2 .row2_col2 .subDiv div svg {
-  width: 100px;
-  fill: #e5e5e5;
+#containerBody .row2 .Subrow2 .row2_col2 .subDiv div i {
+  font-size: 4rem;
+  color: #e5e5e5;
 }
 #containerBody .row2 .Subrow2 .videoMakeFundo {
   display: none;
@@ -464,8 +467,9 @@ header .caixaInfo article span:hover > a {
 #containerBody .row3 .subRow2 .col1 article .btnRow3 a, #containerBody .row3 .subRow2 .col2 article .btnRow3 a, #containerBody .row3 .subRow2 .col3 article .btnRow3 a {
   background: #f6e100;
   color: white;
-  width: 203px;
-  height: 43px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  max-width: 200px;
   border-radius: 18px;
   text-decoration: none;
   display: flex;
@@ -581,8 +585,9 @@ header .caixaInfo article span:hover > a {
 #containerBody .row5 .subRow1 .col1 article .btnRow5 a {
   background: #f6e100;
   color: white;
-  width: 203px;
-  height: 43px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  max-width: 200px;
   border-radius: 18px;
   text-decoration: none;
   display: flex;
@@ -657,18 +662,10 @@ header .caixaInfo article span:hover > a {
   align-items: center;
   gap: 7px;
 }
-#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a svg {
-  width: 15px;
-  fill: white;
-}
 #containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a:hover {
   background: white;
   outline: solid 1px #f6e100;
   color: #f6e100;
-  transition: 0.2s ease-in;
-}
-#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a:hover > span svg {
-  fill: #f6e100 !important;
   transition: 0.2s ease-in;
 }
 #containerBody .rowRodape .subRow {
@@ -739,7 +736,7 @@ header .caixaInfo article span:hover > a {
   font-size: 16px;
 }
 
-#textDigit::after, #textDigit2::after {
+#textDigit2::after {
   content: "|";
   margin-left: 5px;
   animation: blink 0.7s infinite;

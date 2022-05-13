@@ -146,9 +146,10 @@ header{
                         align-items: center;
                         text-decoration: none;
                         gap: 7px;
-                    svg{
-                        width: 15px;
-                        fill: $branco;
+                        font-size: 1rem;
+                    i{
+                        font-size: 1.4rem;
+                        color: $branco;
                         }
                     }
                     a:hover{
@@ -157,8 +158,8 @@ header{
                         color: $amarelo;
                         transition: .2s ease-in;
                     }   
-                    a:hover > svg{
-                        fill: $amarelo;
+                    a:hover > i{
+                        color: $amarelo;
                         transition: .2s ease-in;
                     }
             }
@@ -306,10 +307,11 @@ header{
                         color: $cinzaClaro2;
                     }
                     .nomeTeclando{
+                        min-height: 60px;
                         margin-bottom: 30px;
                         h3{
                             font-size: 33px;
-                            color: $cinzaClaro2;
+                            color: $amarelo;
                         }
                     }
                     p{
@@ -324,17 +326,18 @@ header{
                         a{
                         background: $amarelo;
                         color: $branco;
-                        width: 203px;
-                        height: 43px;
+                        font-size: 1rem;
+                        max-width: 200px;
+                        padding: 10px 20px;
                         border-radius: 18px;
                         text-decoration: none;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         gap: 7px;
-                            svg{
-                                width: 15px;
-                                fill: $branco;
+                            i{
+                                font-size: 1.4rem;
+                                color: $branco;
                             }
                         }
                         a:hover{
@@ -343,8 +346,8 @@ header{
                             color: $amarelo;
                             transition: .2s ease-in;
                         }
-                        a:hover > span svg{
-                            fill: $amarelo !important;
+                        a:hover >  i{
+                            color: $amarelo !important;
                             transition: .2s ease-in;
                         }
                     }
@@ -366,9 +369,9 @@ header{
                     align-items: center;
                     cursor: pointer;
                     div{
-                        svg{
-                            width: 100px;
-                            fill: rgb(229, 229, 229);
+                        i{
+                            font-size: 4rem;
+                            color: rgb(229, 229, 229);
                         }
                     }
                 }
@@ -489,8 +492,9 @@ header{
                         a{
                         background: $amarelo;
                         color: $branco;
-                        width: 203px;
-                        height: 43px;
+                        font-size: 1rem;
+                        padding: 10px 20px;
+                        max-width: 200px;
                         border-radius: 18px;
                         text-decoration: none;
                         display: flex;
@@ -614,8 +618,9 @@ header{
                         a{
                         background: $amarelo;
                         color: $branco;
-                        width: 203px;
-                        height: 43px;
+                        font-size: 1rem;
+                        padding: 10px 20px;
+                        max-width: 200px;
                         border-radius: 18px;
                         text-decoration: none;
                         display: flex;
@@ -700,19 +705,11 @@ header{
                         justify-content: center;
                         align-items: center;
                         gap: 7px;
-                        svg{
-                            width: 15px;
-                            fill: $branco;
-                        }
                     }
                     a:hover{
                         background: $branco;
                         outline: solid 1px $amarelo;
                         color: $amarelo;
-                        transition: .2s ease-in;
-                    }
-                    a:hover > span svg{
-                        fill: $amarelo !important;
                         transition: .2s ease-in;
                     }
                 }
@@ -798,7 +795,7 @@ header{
 }
 
 
-#textDigit::after, #textDigit2::after{
+#textDigit2::after{
     content: '|';
     margin-left: 5px;
     animation: blink  0.7s infinite;

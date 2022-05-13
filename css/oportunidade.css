@@ -308,6 +308,11 @@ header .caixaInfo article span a {
   background: #f6e100;
 }
 
+#textDigit::after {
+  content: "|";
+  margin-left: 5px;
+}
+
 @media (max-width: 575.98px) {
   #containerBody {
     /*LINHA 5

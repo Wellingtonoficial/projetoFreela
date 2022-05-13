@@ -6,9 +6,8 @@ btn_b.addEventListener("click", function(){
 
 	container_b.classList.toggle("vidmakeActiv")//se tem tira, se não tem coloca (classe)
 
-	let video = document.querySelector('video')
 	setTimeout(()=>{
-		video.play()
+		document.querySelector('video').play()
 	},2000)
 })
 
@@ -17,6 +16,6 @@ btnExluir.addEventListener("click", function(){
 	let container2 = document.getElementById("videoMakeAtivo")
 
 	container2.classList.toggle("vidmakeActiv")//se tem tira, se não tem coloca (classe)
+	document.querySelector('video').pause()
 	
-})
-
+});

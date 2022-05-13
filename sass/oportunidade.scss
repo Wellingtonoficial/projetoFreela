@@ -297,6 +297,10 @@ header{
 
 }
 
+#textDigit::after{
+    content: '|';
+    margin-left: 5px;
+}
 
 
 
