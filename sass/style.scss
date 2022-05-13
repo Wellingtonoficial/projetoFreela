@@ -368,10 +368,15 @@ header{
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
-                    div{
-                        i{
-                            font-size: 4rem;
-                            color: rgb(229, 229, 229);
+                    #videoMakeAtivoBtn{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        svg{
+                            width: 7rem;
+                            fill: rgb(229, 229, 229);
                         }
                     }
                 }

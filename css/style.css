@@ -353,9 +353,16 @@ header .caixaInfo article span:hover > a {
   align-items: center;
   cursor: pointer;
 }
-#containerBody .row2 .Subrow2 .row2_col2 .subDiv div i {
-  font-size: 4rem;
-  color: #e5e5e5;
+#containerBody .row2 .Subrow2 .row2_col2 .subDiv #videoMakeAtivoBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerBody .row2 .Subrow2 .row2_col2 .subDiv #videoMakeAtivoBtn svg {
+  width: 7rem;
+  fill: #e5e5e5;
 }
 #containerBody .row2 .Subrow2 .videoMakeFundo {
   display: none;
