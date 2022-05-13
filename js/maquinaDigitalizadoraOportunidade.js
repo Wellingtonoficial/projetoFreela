@@ -2,48 +2,48 @@
 
 const textDigit = document.getElementById('textDigit')
 const phrases = [' de ganhar dinheiro', 'de transformar vidas', 'de realizar seus sonhos']
-let i = 0
-let j = 0 
-let currentPhrase = []
-let isDeleting = false
-let isEnd = false
+let ind = 0
+let jp = 0 
+let currentPhraseF = []
+let isDeletingF = false
+let isEndF = false
 
-function loop () {
-  isEnd = false
-  textDigit.innerHTML = currentPhrase.join('')
+function looppp () {
+  isEndF = false
+  textDigit.innerHTML = currentPhraseF.join('')
 
-  if (i < phrases.length) {
+  if (ind < phrases.length) {
 
-    if (!isDeleting && j <= phrases[i].length) {
-      currentPhrase.push(phrases[i][j])
-      j++
-      textDigit.innerHTML = currentPhrase.join('')
+    if (!isDeletingF && jp <= phrases[ind].length) {
+      currentPhraseF.push(phrases[ind][jp])
+      jp++
+      textDigit.innerHTML = currentPhraseF.join('')
     }
 
-    if(isDeleting && j <= phrases[i].length) {
-      currentPhrase.pop(phrases[i][j])
-      j--
-      textDigit.innerHTML = currentPhrase.join('')
+    if(isDeletingF && jp <= phrases[ind].length) {
+      currentPhraseF.pop(phrases[ind][jp])
+      jp--
+      textDigit.innerHTML = currentPhraseF.join('')
     }
 
-    if (j == phrases[i].length) {
-      isEnd = true
-      isDeleting = true
+    if (jp == phrases[ind].length) {
+      isEndF = true
+      isDeletingF = true
     }
 
-    if (isDeleting && j === 0) {
-      currentPhrase = []
-      isDeleting = false
-      i++
-      if (i === phrases.length) {
-        i = 0
+    if (isDeletingF && jp === 0) {
+      currentPhraseF = []
+      isDeletingF = false
+      ind++
+      if (ind === phrases.length) {
+        ind = 0
       }
     }
   }
-  const spedUp = Math.random() * (80 -50) + 50
-  const normalSpeed = Math.random() * (300 -200) + 20
-  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed
-  setTimeout(loop, time)
+  const spedUpF = Math.random() * (80 -50) + 50
+  const normalSpeedF = Math.random() * (300 -200) + 20
+  const timeF = isEndF ? 2000 : isDeletingF ? spedUpF : normalSpeedF
+  setTimeout(looppp, timeF)
 }
 
-loop()
+looppp()

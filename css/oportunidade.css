@@ -216,13 +216,13 @@ header .caixaInfo article span a {
 #containerBody .row6 .subRow6 .subRow6_row2 .carousel .slider {
   display: flex;
   height: 100%;
-  width: 400%;
+  width: 297%;
 }
 #containerBody .row6 .subRow6 .subRow6_row2 .carousel .slider section {
   flex-basis: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
   font-size: 20px;
   text-align: center;
