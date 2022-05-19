@@ -658,6 +658,7 @@ header{
         }
 
     }
+}
 
 
     /*LIINHA - RODAPE
@@ -796,7 +797,6 @@ header{
             }
         }
     }
-}
 
 
 #textDigit2::after{
@@ -884,9 +884,8 @@ header{
         }
     }
 
-      /*LIINHA - RODAPÉ
-    ******************************************************/
-    #containerBody{
+         /*LIINHA - RODAPÉ
+        ******************************************************/
         .rowRodape{
             .subRowGeral1{width: 100%; border-radius: 90px 0 0 0;
             .divTexDigitalizado{ width: 90%; margin: 0 auto; padding: 15px 0;}
@@ -905,7 +904,6 @@ header{
                 .subSubRow3{.copy{p{font-size: 12px;}}}
             }
         }
-    }
 
 }
 
@@ -968,7 +966,6 @@ header{
 
      /*LIINHA -  RODAPE
     ******************************************************/
-    #containerBody{
         .rowRodape{
             .subRowGeral1{width: 100%;border-radius: 90px 0 0 0;}
             .subRow{width: 95%;
@@ -977,7 +974,6 @@ header{
                 .subSubRow3{.copy{p{font-size: 12px;}}}
             }
         }
-    }
     
 
 }
@@ -1030,7 +1026,7 @@ header{
 
     /*LIINHA -RODAPÉ
     ******************************************************/
-    #containerBody{.rowRodape{
+    .rowRodape{
         .subRowGeral1{width: 100%;}
-        .subRow{width: 95%;}}}
+        .subRow{width: 95%;}}
 }

@@ -188,13 +188,14 @@ header .caixaInfo article p {
   color: #e83e8c;
   transition: 0.2s ease-in;
 }
-#containerBody .rowRodape {
+
+.rowRodape {
   padding: 70px 0 50px 0;
 }
 
 @media (max-width: 575.98px) {
   header {
-    height: 620px;
+    height: 720px;
   }
   header .caixaInfo {
     max-width: 95%;
@@ -264,8 +265,11 @@ header .caixaInfo article p {
   #containerBody .PT_row3 .subRow {
     width: 95%;
   }
+  #containerBody .PT_row3 .subRow .btns span {
+    margin: 0 10px;
+  }
   #containerBody .PT_row3 .subRow .btns span a {
-    width: 180px;
+    width: 170px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {

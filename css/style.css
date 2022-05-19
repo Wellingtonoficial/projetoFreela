@@ -259,8 +259,6 @@ header .caixaInfo article span:hover > a {
   ******************************************************/
   /*LIINHA 5
   ******************************************************/
-  /*LIINHA - RODAPE
-  ******************************************************/
 }
 #containerBody .row2 {
   width: 100%;
@@ -621,13 +619,16 @@ header .caixaInfo article span:hover > a {
   color: #f6e100;
   transition: 0.2s ease-in;
 }
-#containerBody .rowRodape {
+
+/*LIINHA - RODAPE
+******************************************************/
+.rowRodape {
   width: 100%;
   padding: 250px 0 50px 0;
   background: #f9f9f9;
   position: relative;
 }
-#containerBody .rowRodape .subRowGeral1 {
+.rowRodape .subRowGeral1 {
   width: 80%;
   max-width: 1120px;
   height: 307px;
@@ -644,19 +645,19 @@ header .caixaInfo article span:hover > a {
   top: -150px;
   z-index: 997;
 }
-#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado {
+.rowRodape .subRowGeral1 .divTexDigitalizado {
   text-align: center;
   margin-bottom: 50px;
 }
-#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado p {
+.rowRodape .subRowGeral1 .divTexDigitalizado p {
   font-size: 35px;
   color: white;
 }
-#containerBody .rowRodape .subRowGeral1 .divTexDigitalizado p span {
+.rowRodape .subRowGeral1 .divTexDigitalizado p span {
   color: #474747;
   font-weight: 600;
 }
-#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a {
+.rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a {
   outline: solid 1px white;
   color: white;
   width: 203px;
@@ -668,39 +669,39 @@ header .caixaInfo article span:hover > a {
   align-items: center;
   gap: 7px;
 }
-#containerBody .rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a:hover {
+.rowRodape .subRowGeral1 .divBtnRow5 .btnRow5 a:hover {
   background: white;
   outline: solid 1px #f6e100;
   color: #f6e100;
   transition: 0.2s ease-in;
 }
-#containerBody .rowRodape .subRow {
+.rowRodape .subRow {
   width: 80%;
   max-width: 1120px;
   margin: 0 auto;
 }
-#containerBody .rowRodape .subRow .subSubRow1 {
+.rowRodape .subRow .subSubRow1 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
 }
-#containerBody .rowRodape .subRow .subSubRow1 .divLogo img {
+.rowRodape .subRow .subSubRow1 .divLogo img {
   width: 70px;
 }
-#containerBody .rowRodape .subRow .subSubRow1 .traco {
+.rowRodape .subRow .subSubRow1 .traco {
   width: 2px;
   height: 52px;
   background: #f6e100;
   margin: 0 30px;
 }
-#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais {
+.rowRodape .subRow .subSubRow1 .divRedesSociais {
   display: flex;
 }
-#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article {
+.rowRodape .subRow .subSubRow1 .divRedesSociais article {
   margin-right: 15px;
 }
-#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
+.rowRodape .subRow .subSubRow1 .divRedesSociais article a {
   width: 40px;
   height: 40px;
   background: #DADADA;
@@ -710,34 +711,34 @@ header .caixaInfo article span:hover > a {
   justify-content: center;
   align-items: center;
 }
-#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a:hover {
+.rowRodape .subRow .subSubRow1 .divRedesSociais article a:hover {
   background: #f6e100;
 }
-#containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
+.rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
   width: 18px;
   fill: white;
 }
-#containerBody .rowRodape .subRow .subSubRow2 {
+.rowRodape .subRow .subSubRow2 {
   margin-bottom: 60px;
 }
-#containerBody .rowRodape .subRow .subSubRow2 .menuFooter ul {
+.rowRodape .subRow .subSubRow2 .menuFooter ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#containerBody .rowRodape .subRow .subSubRow2 .menuFooter ul li a {
+.rowRodape .subRow .subSubRow2 .menuFooter ul li a {
   text-decoration: none;
   color: #a7a5a5;
   font-size: 16px;
 }
-#containerBody .rowRodape .subRow .subSubRow2 .menuFooter ul li a:hover {
+.rowRodape .subRow .subSubRow2 .menuFooter ul li a:hover {
   color: #cbc9c9;
   transition: 0.2s ease-in;
 }
-#containerBody .rowRodape .subRow .subSubRow3 .copy {
+.rowRodape .subRow .subSubRow3 .copy {
   text-align: center;
 }
-#containerBody .rowRodape .subRow .subSubRow3 .copy p {
+.rowRodape .subRow .subSubRow3 .copy p {
   color: #a7a5a5;
   font-size: 16px;
 }
@@ -853,30 +854,30 @@ header .caixaInfo article span:hover > a {
 
   /*LIINHA - RODAPÉ
   ******************************************************/
-  #containerBody .rowRodape .subRowGeral1 {
+  .rowRodape .subRowGeral1 {
     width: 100%;
     border-radius: 90px 0 0 0;
   }
-  #containerBody .rowRodape .subRowGeral1 .divTexDigitalizado {
+  .rowRodape .subRowGeral1 .divTexDigitalizado {
     width: 90%;
     margin: 0 auto;
     padding: 15px 0;
   }
-  #containerBody .rowRodape .subRow {
+  .rowRodape .subRow {
     width: 95%;
   }
-  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
+  .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
     width: 30px;
     height: 30px;
   }
-  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
+  .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
     width: 13px;
     fill: white;
   }
-  #containerBody .rowRodape .subRow .subSubRow2 {
+  .rowRodape .subRow .subSubRow2 {
     display: none;
   }
-  #containerBody .rowRodape .subRow .subSubRow3 .copy p {
+  .rowRodape .subRow .subSubRow3 .copy p {
     font-size: 12px;
   }
 }
@@ -963,25 +964,25 @@ header .caixaInfo article span:hover > a {
 
   /*LIINHA -  RODAPE
   ******************************************************/
-  #containerBody .rowRodape .subRowGeral1 {
+  .rowRodape .subRowGeral1 {
     width: 100%;
     border-radius: 90px 0 0 0;
   }
-  #containerBody .rowRodape .subRow {
+  .rowRodape .subRow {
     width: 95%;
   }
-  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
+  .rowRodape .subRow .subSubRow1 .divRedesSociais article a {
     width: 30px;
     height: 30px;
   }
-  #containerBody .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
+  .rowRodape .subRow .subSubRow1 .divRedesSociais article a svg {
     width: 13px;
     fill: white;
   }
-  #containerBody .rowRodape .subRow .subSubRow2 {
+  .rowRodape .subRow .subSubRow2 {
     display: none;
   }
-  #containerBody .rowRodape .subRow .subSubRow3 .copy p {
+  .rowRodape .subRow .subSubRow3 .copy p {
     font-size: 12px;
   }
 }
@@ -1047,10 +1048,10 @@ header .caixaInfo article span:hover > a {
 
   /*LIINHA -RODAPÉ
   ******************************************************/
-  #containerBody .rowRodape .subRowGeral1 {
+  .rowRodape .subRowGeral1 {
     width: 100%;
   }
-  #containerBody .rowRodape .subRow {
+  .rowRodape .subRow {
     width: 95%;
   }
 }
