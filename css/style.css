@@ -216,13 +216,15 @@ header .caixaInfo article span:hover > a {
     transition: 0.5s ease;
   }
   header nav .menu {
-    padding: 0;
+    padding: 10px 0;
     border-radius: 0;
+    display: block;
   }
   header nav .menu .menuUl {
     width: 100%;
     display: block;
     margin: 0;
+    margin-bottom: 20px;
   }
   header nav .menu .menuUl li {
     width: 100%;
@@ -242,8 +244,8 @@ header .caixaInfo article span:hover > a {
     content: " ";
     display: none;
   }
-  header nav .menu .ulStyle {
-    display: none;
+  header nav .menu .ulStyle a {
+    border-radius: 0;
   }
   header nav.active {
     top: 100px;
